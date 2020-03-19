@@ -1,0 +1,13 @@
+.icons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons a {
+    color: #ffffff;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+}
