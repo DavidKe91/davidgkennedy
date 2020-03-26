@@ -1,0 +1,19 @@
+.headerWrapper {
+    display: inline-block;
+}
+
+.columnsJustify {
+    -webkit-columns: 2 200px;
+    -moz-columns: 2 200px;
+    columns: 2 200px;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    text-align: justify;
+}
+
+.iconRow, .aboutMeCols {
+    width: 100%;
+    display: flex;
+    margin: 50px auto 0px auto;
+}

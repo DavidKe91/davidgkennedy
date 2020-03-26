@@ -9,3 +9,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main.toggled .sidebarBtn {
+    left: -40px;
+  }
