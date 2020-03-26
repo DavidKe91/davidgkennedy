@@ -17,7 +17,17 @@ class Home extends React.Component {
         menuOpen: false,
     };
 
+    handleMenuClick() {
+        this.setState({
+            menuOpen: !this.state.menuOpen
+        });
+    }
 
+    handleAnchorClick() {
+        this.setState({
+            menuOpen: false
+        });
+    }
 
     render() {
 
