@@ -86,6 +86,14 @@ const Post = ({ match }) => {
                     </div>
                 </div>
             </div>
+            <div className="row no-gutter">
+                <div className="col-6">
+                    <img src={currentPost.desktopMockup} class="img-fluid" alt="Desktop Mockup" />
+                </div>
+                <div className="col-6">
+                    <img src={currentPost.mobileMockup} class="img-fluid" alt="Mobile Mockup" />
+                </div>
+            </div>
         </>
     );
 };

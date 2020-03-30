@@ -4,11 +4,13 @@ import classNames from 'classnames';
 import Icons from '../components/Icons/Icons';
 import Introduction from '../components/Introduction/Introduction';
 import AboutMe from '../components/AboutMe/AboutMe';
+import Experience from '../components/Experience/Experience';
 import Work from '../components/Work/Work';
 import Menu from '../components/Sidebar/Menu/Menu';
 import MenuItem from '../components/Sidebar/MenuItem/MenuItem';
 // import MenuButtonOpen from '../components/Sidebar/MenuButtons/MenuButtonOpen';
 import MenuButtonClose from '../components/Sidebar/MenuButtons/MenuButtonClose';
+import Footer from '../components/Footer/Footer';
 
 class Home extends React.Component {
     state = {
@@ -66,7 +68,7 @@ class Home extends React.Component {
             return (
                 <MenuItem
                     key={index}
-                    delay={`${index * 0.1}s`}
+                    delay={`${index * 1}s`}
                     onClick={() => { this.props.anchorClick(); }}>{val}
                 </MenuItem>
             )
@@ -91,7 +93,9 @@ class Home extends React.Component {
                 <Icons />
                 <Introduction />
                 <AboutMe />
+                <Experience />
                 <Work />
+                <Footer />
             </div>
         );
     }

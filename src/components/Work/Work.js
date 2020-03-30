@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { getFirebase } from "../../firebase";
 import { Link } from "react-router-dom";
 import classes from '../Work/Work.module.css';
-import classNames from 'classnames';
 
 const Work = () => {
     const [loading, setLoading] = useState(true);
@@ -27,36 +26,31 @@ const Work = () => {
             });
     }
 
+    console.log(blogPosts);
 
     if (loading) {
         return <h1>Loading...</h1>;
     }
 
-    let cardClasses = classNames('col-6', 'workCard');
-
     return (
-        <section>
+        <section className={classes.workSection}>
             <div className="container">
                 <div className={classes.headerWrapper}>
-                    <h3 className="text-center">Recent Work<sup>2</sup></h3>
+                    <h3 className="text-center white">Recent Work<sup>3</sup></h3>
                 </div>
-                <div className="row">
+                <div className="row portfolioRow">
                     {blogPosts.map(blogPost => (
-                        <div key={blogPost.slug} className={cardClasses}>
-                            <img className="img-fluid" src={blogPost.previewImage} alt={blogPost.coverImageAlt} />
-                            <div className="card-content">
-                                <h2>
-                                    {blogPost.title} &mdash;{" "}
-
-                                    <span style={{ color: "#5e5e5e" }}>{blogPost.datePretty}</span>
-                                </h2>
-                                <p
-                                    dangerouslySetInnerHTML={{
-                                        __html: `${blogPost.content.substring(0, 200)}...`
-                                    }}
-                                ></p>
-                                <Link to={`/${blogPost.slug}`}>Continue reading...</Link>
-                            </div>
+                        <div className="col-6" key={blogPost.slug}>
+                            <Link to={`/${blogPost.slug}`}>
+                                <div className={classes.workCard}>
+                                    <img className="img-fluid" src={blogPost.previewImage} alt={blogPost.coverImageAlt} />
+                                    <div className={classes.cardContent}>
+                                        <h2 className={classes.caption}>
+                                            {blogPost.title}
+                                        </h2>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     ))}
                 </div>

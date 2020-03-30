@@ -79,3 +79,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.headerWrapper h2:after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    z-index: 9;
+    height: 6px;
+    border-top: 1px solid #ffffff;
+}

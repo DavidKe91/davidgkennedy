@@ -1,5 +1,41 @@
+.workSection {
+    background: linear-gradient(-45deg, #ee7752, #d53369);
+    padding-bottom: 80px;
+    padding-top: 130px;
+    -webkit-clip-path: polygon(63% 6%, 100% 0, 100% 100%, 32% 100%, 0 100%, 0 0);
+    clip-path: polygon(63% 11%, 100% 0, 100% 100%, 32% 100%, 0 100%, 0 0);
+}
+
 .headerWrapper {
     display: inline-block;
+}
+
+.cardContent {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: white;
+}
+
+.caption {
+    color: black;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 6px;
+    margin: 0px;
+}
+
+.card-content::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    z-index: 9;
+    height: 6px;
+    border-top: 1px solid #ffffff;
 }
 
 .workCard {
@@ -8,5 +44,5 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    margin: 15px;
 }
