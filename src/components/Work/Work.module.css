@@ -1,29 +1,43 @@
 .workSection {
-    background: linear-gradient(-45deg, #ee7752, #d53369);
-    padding-bottom: 80px;
-    padding-top: 130px;
+    background: #e8e8e8;
+    padding-bottom: 140px;
+    padding-top: 180px;
     -webkit-clip-path: polygon(63% 6%, 100% 0, 100% 100%, 32% 100%, 0 100%, 0 0);
-    clip-path: polygon(63% 11%, 100% 0, 100% 100%, 32% 100%, 0 100%, 0 0);
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 100% 100%, 0% 90%, 0% 0%);
 }
-
 .headerWrapper {
     display: inline-block;
 }
 
 .cardContent {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background-color: white;
+    position: relative;
+    text-align: left;
+    padding: 10px 10px 0px 10px;
+}
+
+.category {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.categoryLink {
+    font-weight: 600;
+    color: #d53369;
+    font-size: 10px;
 }
 
 .caption {
+    width: 100%;
     color: black;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 15px;
+    text-align: left;
+    float: left;
+    border-bottom: 1px solid #eaeaea;
+    display: block;
     font-weight: 600;
-    padding: 4px 6px;
-    margin: 0px;
+    padding: 4px 0px 10px 0px;
+    margin: 0px 0px 5px 0px;
 }
 
 .card-content::after {
@@ -38,11 +52,17 @@
     border-top: 1px solid #ffffff;
 }
 
+.previewText {
+    padding-top: 5px;
+}
+
 .workCard {
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
     min-width: 0;
     word-wrap: break-word;
-    margin: 15px;
+    margin: 15px 0px;
+    border: 3px solid white;
 }

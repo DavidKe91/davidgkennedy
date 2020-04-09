@@ -88,10 +88,10 @@ const Post = ({ match }) => {
             </div>
             <div className="row no-gutter">
                 <div className="col-6">
-                    <img src={currentPost.desktopMockup} class="img-fluid" alt="Desktop Mockup" />
+                    <img src={currentPost.desktopMockup} className="img-fluid" alt="Desktop Mockup" />
                 </div>
                 <div className="col-6">
-                    <img src={currentPost.mobileMockup} class="img-fluid" alt="Mobile Mockup" />
+                    <img src={currentPost.mobileMockup} className="img-fluid" alt="Mobile Mockup" />
                 </div>
             </div>
         </>

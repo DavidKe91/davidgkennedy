@@ -15,10 +15,16 @@
 
 .main.toggled .sidebar {
     left: 0px;
+    box-shadow: 4px 1px 8px 2px rgba(101, 101, 101, 0.45);
+}
+
+.menuItem {
+    padding: 5px 0px;
 }
 
 .menu-items {
     position: relative;
     top: 50%;
+    padding: 20px;
     transform: translateY(-50%);
 }

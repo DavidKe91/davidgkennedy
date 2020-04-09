@@ -41,9 +41,10 @@ li.tab-list-item.tab-list-active::after {
     border-left-color: #d53369;
 }
 
-.tab-content-item i {
-    font-size: 32px;
+.tab-content-item svg {
+    width: 35px !important;
     padding: 0px 0px 15px 0px;
+    height: 60px;
 }
 
 .tabContent {
@@ -53,6 +54,11 @@ li.tab-list-item.tab-list-active::after {
 .tab-content-item h4 {
     color: #d53369;
     margin-bottom: 15px;
+}
+
+.tab-content-item img {
+    padding: 0px 0px 15px 0px;
+    height: 60px;
 }
 
 .tab-content-item p {

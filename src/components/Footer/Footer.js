@@ -9,13 +9,13 @@ class Footer extends Component {
     }
     render() {
         return (
-            <footer>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-3">Copyright &copy; {this.footerYear()} by David Kennedy</div>
-                        <div className="col-6">2</div>
-                    </div>
+            <footer className={classes.footer}>
+                <div className="col-sm-12 col-md-6"><h3>David Kennedy</h3></div>
+                <div className="col-sm-12 col-md-6">2</div>
+                <div className="col-sm-12 col-md-6">
+                    <small>Copyright &copy; {this.footerYear()} by David Kennedy</small>
                 </div>
+                <div className="col-sm-12 col-md-6">2</div>
             </footer>
         );
     }

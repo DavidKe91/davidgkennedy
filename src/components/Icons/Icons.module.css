@@ -1,14 +1,16 @@
 .icons {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .icons a {
-    color: #ffffff;
-    padding: 5px 10px;
-    display: block;
+    color: #434343;
+    padding: 0px 10px;
+    display: inline-block;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
 }

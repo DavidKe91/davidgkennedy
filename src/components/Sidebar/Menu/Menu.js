@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Menu.css'
+import Icons from '../../Icons/Icons';
 
 class Menu extends Component {
     state = {
@@ -23,6 +24,7 @@ class Menu extends Component {
                             {this.props.children}
                         </div> : null
                 }
+                <Icons />
             </div>
         );
     }

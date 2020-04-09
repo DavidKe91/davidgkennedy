@@ -1,10 +1,8 @@
 import React from "react";
 import { getFirebase } from "../firebase";
 import classNames from 'classnames';
-import Icons from '../components/Icons/Icons';
 import Introduction from '../components/Introduction/Introduction';
 import AboutMe from '../components/AboutMe/AboutMe';
-import Experience from '../components/Experience/Experience';
 import Work from '../components/Work/Work';
 import Menu from '../components/Sidebar/Menu/Menu';
 import MenuItem from '../components/Sidebar/MenuItem/MenuItem';
@@ -90,10 +88,8 @@ class Home extends React.Component {
                     open={this.state.menuOpen}>
                     {menuItems}
                 </Menu>
-                <Icons />
                 <Introduction />
                 <AboutMe />
-                <Experience />
                 <Work />
                 <Footer />
             </div>

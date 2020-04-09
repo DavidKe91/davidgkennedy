@@ -36,21 +36,28 @@ const Work = () => {
         <section className={classes.workSection}>
             <div className="container">
                 <div className={classes.headerWrapper}>
-                    <h3 className="text-center white">Recent Work<sup>3</sup></h3>
+                    <h3 className="text-center">Recent Work<sup>2</sup></h3>
                 </div>
                 <div className="row portfolioRow">
                     {blogPosts.map(blogPost => (
-                        <div className="col-6" key={blogPost.slug}>
-                            <Link to={`/${blogPost.slug}`}>
-                                <div className={classes.workCard}>
+                        <div className="col-sm-12 col-md-6" key={blogPost.slug}>
+                            <div className={classes.workCard}>
+                                <Link to={`/${blogPost.slug}`}>
                                     <img className="img-fluid" src={blogPost.previewImage} alt={blogPost.coverImageAlt} />
-                                    <div className={classes.cardContent}>
-                                        <h2 className={classes.caption}>
-                                            {blogPost.title}
-                                        </h2>
-                                    </div>
+                                </Link>
+                                <div className={classes.cardContent}>
+                                    <p className={classes.category}>
+                                        Tech Stack: <small className={classes.categoryLink}>{blogPost.tech}</small>
+                                    </p>
+                                    <h2 className={classes.caption}>
+                                        {blogPost.title}
+                                    </h2>
+                                    <p className={classes.previewText}>{blogPost.content.substring(0, 190)}...<Link to={`/${blogPost.slug}`}>Continue Reading</Link></p>
+                                    <Link to={`/${blogPost.slug}`}>
+                                        <button>Read More</button>
+                                    </Link>
                                 </div>
-                            </Link>
+                            </div>
                         </div>
                     ))}
                 </div>
