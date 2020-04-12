@@ -7,6 +7,7 @@ import Experience from '../components/Experience/Experience';
 import Work from '../components/Work/Work';
 import Menu from '../components/Sidebar/Menu/Menu';
 import MenuButtonClose from '../components/Sidebar/MenuButtons/MenuButtonClose';
+import Form from '../components/Form/Form';
 import Footer from '../components/Footer/Footer';
 
 class Home extends React.Component {
@@ -78,6 +79,7 @@ class Home extends React.Component {
                     <Introduction />
                     <AboutMe />
                     <Experience />
+                    <Form />
                     <Work />
                 </div>
                 <Footer />
