@@ -10,20 +10,17 @@
     }
 }
 
-.topOuter {
-    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
-    clip-path: polygon(50% 0%, 100% 0, 100% 86%, 44% 94%, 0 100%, 0 0);
-}
-
 .appHeader {
-    min-height: 100vh;
-    background-color: white;
+    height: 50vh;
     display: flex;
     flex-direction: column;
+    /* background: linear-gradient(90deg, #23a6d5, #16c2b9);
+    */
+    background-image: url('https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/about-bg.jpg');
+    background-size: cover;
     align-items: center;
     justify-content: center;
     text-align: center;
-    clip-path: polygon(50% 0%, 100% 0, 73% 105%, 0 100%, 0 0);
 }
 
 .titleContainer {
@@ -58,4 +55,11 @@
 
 .projectHeading {
     margin-top: 20px;
+}
+
+.aboutMeRow {
+    width: 100%;
+    max-width: 700px;
+    margin: 35px auto 35px auto;
+    text-align: left;
 }

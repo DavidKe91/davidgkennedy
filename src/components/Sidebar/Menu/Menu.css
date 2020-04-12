@@ -4,7 +4,7 @@
     position: fixed;
     left: 0px;
     z-index: 1;
-    background-color: #fff;
+    background-color: #16c2b9;
     left: -300px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -18,6 +18,11 @@
     box-shadow: 4px 1px 8px 2px rgba(101, 101, 101, 0.45);
 }
 
+.sidebar a {
+    color: #fff;
+    font-size: 15px;
+}
+
 .menuItem {
     padding: 5px 0px;
 }
@@ -25,6 +30,7 @@
 .menu-items {
     position: relative;
     top: 50%;
+    list-style: none;
     padding: 20px;
     transform: translateY(-50%);
 }

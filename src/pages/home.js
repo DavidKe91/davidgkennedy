@@ -3,10 +3,9 @@ import { getFirebase } from "../firebase";
 import classNames from 'classnames';
 import Introduction from '../components/Introduction/Introduction';
 import AboutMe from '../components/AboutMe/AboutMe';
+import Experience from '../components/Experience/Experience';
 import Work from '../components/Work/Work';
 import Menu from '../components/Sidebar/Menu/Menu';
-import MenuItem from '../components/Sidebar/MenuItem/MenuItem';
-// import MenuButtonOpen from '../components/Sidebar/MenuButtons/MenuButtonOpen';
 import MenuButtonClose from '../components/Sidebar/MenuButtons/MenuButtonClose';
 import Footer from '../components/Footer/Footer';
 
@@ -58,41 +57,31 @@ class Home extends React.Component {
         }
 
         if (loading) {
-            return <h1>Loading...</h1>;
+            return (<div className="spinnerContainer"><div className="spinner">
+                <div className="double-bounce1"></div>
+                <div className="double-bounce2"></div>
+            </div>
+            </div>);
         }
 
-        const menu = ['Home', 'About Me', 'Experience', 'Portfolio'];
-        const menuItems = menu.map((val, index) => {
-            return (
-                <MenuItem
-                    key={index}
-                    delay={`${index * 1}s`}
-                    onClick={() => { this.props.anchorClick(); }}>{val}
-                </MenuItem>
-            )
-        });
-
         return (
-            <div className={toggleClasses}>
-                {/* <MenuButtonOpen
-                    open={this.state.menuOpen}
-                    onClick={() => this.handleMenuClick()}>
-                    <i className="fas fa-bars"></i>
-                </MenuButtonOpen> */}
-                <MenuButtonClose
-                    open={this.state.menuOpen}
-                    onClick={() => this.handleMenuClick()}>
-                    <i className="fas fa-bars"></i>
-                </MenuButtonClose>
-                <Menu
-                    open={this.state.menuOpen}>
-                    {menuItems}
-                </Menu>
-                <Introduction />
-                <AboutMe />
-                <Work />
+            <>
+                <div className={toggleClasses}>
+                    <MenuButtonClose
+                        open={this.state.menuOpen}
+                        onClick={() => this.handleMenuClick()}>
+                        <i className="fas fa-bars"></i>
+                    </MenuButtonClose>
+                    <Menu
+                        open={this.state.menuOpen}>
+                    </Menu>
+                    <Introduction />
+                    <AboutMe />
+                    <Experience />
+                    <Work />
+                </div>
                 <Footer />
-            </div>
+            </>
         );
     }
 };

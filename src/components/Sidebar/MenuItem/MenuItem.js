@@ -13,16 +13,14 @@ class MenuItem extends Component {
 
     render() {
         return (
-            <div>
-                <div
-                    className="menuItem"
-                    onMouseEnter={() => { this.handleHover(); }}
-                    onMouseLeave={() => { this.handleHover(); }}
-                    onClick={this.props.onClick}
-                >
-                    {this.props.children}
-                </div>
-            </div>
+            <li
+                className="menuItem"
+                onMouseEnter={() => { this.handleHover(); }}
+                onMouseLeave={() => { this.handleHover(); }}
+                onClick={this.props.onClick}
+            >
+                {this.props.children}
+            </li>
         );
     }
 }

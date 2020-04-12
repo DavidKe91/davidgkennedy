@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import classes from './AboutMe.module.css';
-import Experience from '../Experience/Experience';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faTerminal, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faTerminal, faPaintBrush, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 class AboutMe extends Component {
     render() {
@@ -39,7 +39,7 @@ class AboutMe extends Component {
                                     </div>
                                 </div>
                                 <p className="mb-5">Hi! My name is David Kennedy and I am a Frontend Developer based in Berlin. My main area of expertise is building responsive React applications. Having initially worked as a graphic designer, I later transitioned to Frontend web development and I am now looking for me next opportunity.</p>
-                                <button>Learn More About Me</button>
+                                <Link to="/about"><button>Learn More About Me <FontAwesomeIcon icon={faArrowRight} /></button></Link>
                             </div>
                             {/* <div className={classes.iconRow}>
                             <div className="col-3">

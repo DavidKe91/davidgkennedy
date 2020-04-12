@@ -1,0 +1,160 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.appHeader {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(90deg, #23a6d5, #16c2b9);
+    */
+    background-image: url('https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/about-bg.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleContainer {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    padding: 0px 20px;
+}
+
+.projectInfo {
+    margin: 40px 0px 0px 0px;
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+}
+
+.columnsLeft {
+    -webkit-columns: 2 200px;
+    -moz-columns: 2 200px;
+    columns: 2 200px;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    text-align: left;
+}
+
+.iconRow, .aboutMeCols {
+    width: 100%;
+    display: flex;
+    margin: 50px auto 0px auto;
+}
+
+.projectHeading {
+    margin-top: 20px;
+}
+
+.aboutMeRow {
+    width: 100%;
+    max-width: 700px;
+    margin: 0px auto 90px auto;
+    text-align: left;
+}
+
+.jobDetails {
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.jobDetails p {
+    font-size: 12px;
+}
+
+.aboutMeRow h2 {
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+    float: none;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #051441;
+}
+
+.aboutMeRow h2:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    z-index: 9;
+    height: 6px;
+    border-top: 1px solid #16c2b9;
+}
+
+.aboutMeRow h3 {
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 20px 0px;
+    color: #051441;
+}
+
+.jobDetails h3 {
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin: 0px 0px 20px 0px;
+    color: #051441;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.aboutMeRow h3:before, .jobDetails h3:before {
+    display: none;
+}
+
+.aboutMeRow ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.aboutMeRow ul li {
+    font-size: 14px;
+    color: #525d6e;
+    padding-left: 20px;
+    position: relative;
+    line-height: 21px;
+    margin: 17px 0px;
+}
+
+.aboutMeRow ul li svg {
+    color: #16c2b9;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.jobIcon {
+    margin-bottom: 10px;
+}
+
+.jobIcon svg {
+    color: #16c2b9;
+    width: 30px !important;
+    height: 25px;
+}
+
+.jobDetails h4 svg {
+    color: #16c2b9;
+    margin-right: 10px;
+}

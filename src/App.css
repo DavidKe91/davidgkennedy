@@ -1,5 +1,98 @@
+.spinnerContainer, .notFoundContainer {
+    height: 100vh;
+}
+
+.notFoundContainer {
+    background-color: #2bdbd1;
+    position: relative;
+}
+
+.notFoundContainer .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.notFoundContainer .content h1, .notFoundContainer .content p {
+        color: #fff;
+}
+
+.notFoundContainer .content p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.notFoundContainer .content h1:after {
+    display: none;
+}
+
+.notFoundContainer .content a button {
+    -webkit-appearance: none;
+    background: none;
+    box-shadow: none;
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+    color: #16c2b9;
+    position: relative;
+    padding: 10px 30px 10px 25px;
+    margin: 0px auto 30px auto;
+    font-size: 13px;
+    border-radius: 50px;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #17b9b1;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
 .main {
     width: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    margin-bottom: 160px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -24,13 +117,30 @@ button {
     -webkit-appearance: none;
     background: none;
     box-shadow: none;
-    background-color: #d53369;
-    border: none;
+    border: 2px solid #16c2b9;
+    background-color: #16c2b9;
     text-transform: uppercase;
     color: white;
-    padding: 10px 25px;
+    position: relative;
+    padding: 8px 33px 8px 23px;
     margin: 0px auto 30px auto;
-    font-size: 11px;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+button.alt-btn {
+    color: #16c2b9;
+    border: 2px solid #16c2b9;
+    background-color: white;
+}
+
+button svg {
+    width: 15px !important;
+    height: 11px !important;
+    top: 50%;
+    right: 15px;
+    position: absolute;
+    transform: translateY(-50%);
 }
 
 h1 {
@@ -72,7 +182,7 @@ h3 {
     position: relative;
     display: inline-block;
     margin-bottom: 25px;
-    color: #2c4061;
+    color: #051441;
 }
 
 h3:before {
@@ -84,7 +194,7 @@ h3:before {
     right: 0px;
     z-index: 9;
     height: 6px;
-    border-top: 1px solid #d53369;
+    border-top: 1px solid #16c2b9;
 }
 
 h3 sup {
@@ -102,15 +212,25 @@ h3.white:before {
 h4 {
     text-align: left;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
     margin-bottom: 10px;
-    color: #2c4061;
+    color: #051441;
+    line-height: 20px;
+}
+
+h5 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+    position: relative;
+    margin-bottom: 10px;
+    color: #051441;
     line-height: 20px;
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
     color: #525d6e;
     line-height: 21px
 }

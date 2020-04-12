@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { getFirebase } from "../../firebase";
 import { Link } from "react-router-dom";
 import classes from '../Work/Work.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Work = () => {
     const [loading, setLoading] = useState(true);
@@ -52,9 +54,9 @@ const Work = () => {
                                     <h2 className={classes.caption}>
                                         {blogPost.title}
                                     </h2>
-                                    <p className={classes.previewText}>{blogPost.content.substring(0, 190)}...<Link to={`/${blogPost.slug}`}>Continue Reading</Link></p>
+                                    <p className={classes.previewText}>{blogPost.content.substring(0, 190)}...<Link to={`/${blogPost.slug}`}>Read More</Link></p>
                                     <Link to={`/${blogPost.slug}`}>
-                                        <button>Read More</button>
+                                        <button>Read More <FontAwesomeIcon icon={faArrowRight} /></button>
                                     </Link>
                                 </div>
                             </div>

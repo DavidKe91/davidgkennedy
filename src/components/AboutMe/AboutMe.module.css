@@ -15,7 +15,7 @@
 .iconRow, .aboutMeCols {
     width: 100%;
     max-width: 700px;
-    margin: 35px auto 35px auto;
+    margin: 35px auto 0px auto;
 }
 
 .AboutMeCopy {
@@ -23,23 +23,24 @@
 }
 
 .categories {
-    text-align: left;
+    text-align: center;
     padding: 0px 5px;
     border-right: 1px solid #eaeaea;
 }
 
-.aboutMeCols .row .col-4:last-child .categories {
+.aboutMeCols .row .col-4:nth-child(3) .categories {
     border-right: none;
 }
 
 .categories svg {
-    color: #d53369;
+    color: #16c2b9;
     text-align: left;
 }
 
 .categories h4 {
-    color: #2c4061;
+    color: #051441;
     margin-top: 15px;
+    text-align: center;
 }
 
 .categories p {
