@@ -1,9 +1,7 @@
 section.experience {
-    background: #eeeeee;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    -webkit-clip-path: polygon(63% 6%, 100% 0, 100% 100%, 32% 100%, 0 100%, 0 0);
-    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 100% 100%, 0% 90%, 0% 0%);
+    background: #f9f8fd;
+    padding-bottom: 75px;
+    padding-top: 75px;
 }
 
 .experienceRow {
@@ -12,32 +10,40 @@ section.experience {
     margin: 35px auto 0px auto;
 }
 
+.experienceRow .intro {
+    text-align: center;
+}
+
 .experienceRow p {
     margin-bottom: 40px;
 }
 
-.experienceRow a {
+.buttonRow {
+    margin-top: 35px;
+}
+
+.experienceRow .buttonRow a {
     margin: 0px 10px;
 }
 
-.experienceRow .col-4 svg {
+.experienceRow .col-12.col-md-4 svg {
     color: #16c2b9;
 }
 
-.experienceRow .col-4 svg {
+.experienceRow .col-12.col-md-4 svg {
     text-align: left;
     display: block;
     margin: 15px 0px;
 }
 
-.experienceRow .col-4 h4 {
+.experienceRow .col-12.col-md-4 h4 {
     margin-bottom: 20px;
 }
 
-.experienceRow .col-4 h5 {
+.experienceRow .col-12.col-md-4 h5 {
     text-align: left;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
     position: relative;
     margin-bottom: 10px;
     color: #051441;
@@ -67,8 +73,10 @@ section.experience {
     list-style: none;
     text-align: left;
     font-size: 14px;
-    margin: 0px;
-    padding: 0px 15px;
+    float: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0px 15px 30px 15px;
+    padding: 0px;
 }
 
 .tab-list-item h5 {
@@ -77,24 +85,38 @@ section.experience {
 }
 
 .tabList li {
-    padding: 16px 10px 16px 15px;
-    border-left: 3px solid #e0e0e0;
     cursor: pointer;
     position: relative;
+    float: left;
+    padding: 0px 0px 10px;
 }
 
-li.tab-list-item.tab-list-active {
-    border-left-color: #16c2b9;
+.tab-list-item + .tab-list-item {
+    margin-left: 55px;
 }
 
-li.tab-list-item.tab-list-active::after {
+.tab-list-item:before {
     content: "";
-    border: 6px solid transparent;
+    width: 0;
+    height: 1px;
+    background: #16c2b9;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0px;
-    border-left-color: #16c2b9;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+li.tab-list-item.tab-list-active:before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+li.tab-list-item.tab-list-active h5 {
+    color: #16c2b9;
 }
 
 .tab-content-item svg {
@@ -105,6 +127,7 @@ li.tab-list-item.tab-list-active::after {
 
 .tabContent {
     text-align: left;
+    padding-top: 20px;
 }
 
 .tab-content-item h4 {
@@ -118,6 +141,6 @@ li.tab-list-item.tab-list-active::after {
 }
 
 .tab-content-item p {
-    font-size: 12px;
+    font-size: 13px;
     color: #4a4a4a;
 }

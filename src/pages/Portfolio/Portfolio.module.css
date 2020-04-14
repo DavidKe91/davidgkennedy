@@ -1,0 +1,128 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.appHeader {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(90deg, #23a6d5, #16c2b9);
+    */
+    background-image: url('https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/about-bg.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleContainer {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    padding: 0px 20px;
+}
+
+.projectInfo {
+    margin: 40px 0px 0px 0px;
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+}
+
+.columnsLeft {
+    -webkit-columns: 2 200px;
+    -moz-columns: 2 200px;
+    columns: 2 200px;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    text-align: left;
+}
+
+.iconRow, .aboutMeCols {
+    width: 100%;
+    display: flex;
+    margin: 50px auto 0px auto;
+}
+
+.projectHeading {
+    margin-top: 20px;
+}
+
+.aboutMeRow {
+    width: 100%;
+    max-width: 700px;
+    margin: 35px auto 35px auto;
+    text-align: left;
+}
+
+
+.headerWrapper {
+    display: inline-block;
+}
+
+.cardContent {
+    position: relative;
+    text-align: left;
+    padding: 10px 10px 0px 10px;
+}
+
+.category {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.categoryLink {
+    font-weight: 600;
+    color: #16c2b9;
+    font-size: 10px;
+}
+
+.caption {
+    width: 100%;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: left;
+    float: left;
+    border-bottom: 1px solid #eaeaea;
+    display: block;
+    font-weight: 600;
+    padding: 4px 0px 10px 0px;
+    margin: 0px 0px 5px 0px;
+}
+
+.card-content::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    z-index: 9;
+    height: 6px;
+    border-top: 1px solid #ffffff;
+}
+
+.previewText {
+    padding-top: 5px;
+}
+
+.workCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-width: 0;
+    word-wrap: break-word;
+    margin: 15px 0px;
+    border: 3px solid white;
+}

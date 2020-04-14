@@ -42,7 +42,7 @@ class Home extends React.Component {
             getFirebase()
                 .database()
                 .ref("/posts")
-                .orderByChild("dateFormatted")
+                .limitToLast(2)
                 .once("value")
                 .then(snapshot => {
                     let posts = [];
@@ -79,8 +79,8 @@ class Home extends React.Component {
                     <Introduction />
                     <AboutMe />
                     <Experience />
-                    <Form />
                     <Work />
+                    <Form />
                 </div>
                 <Footer />
             </>

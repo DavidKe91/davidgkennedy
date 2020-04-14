@@ -7,6 +7,7 @@ import MenuButtonClose from '../../components/Sidebar/MenuButtons/MenuButtonClos
 import Footer from '../../components/Footer/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faUser, faBuilding, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import { faReact, faSass, faGit, faLaravel, faPhp, faWordpress, faJenkins, faAws, faLinux, faAdobe, faSketch, faInvision, faFigma } from '@fortawesome/free-brands-svg-icons';
 import Tabs from '../../components/Tabs/Tabs';
 
 class Experience extends React.Component {
@@ -62,25 +63,104 @@ class Experience extends React.Component {
                                 </div>
                             </div>
                         </header>
-                        <section className="about">
+                        <section className="experience">
                             <div className="container">
                                 <div className="row">
+                                    <p className="intro">Upon finishing secondary school I attended Maynooth University where I studied Digital Media for four years. The course was a combination of media theory, computer science and creative media projects. I opted to take an optional Erasmus year abroad where I studied at the University of Amsterdam. During this time I also worked as a graphic design intern. Whilst working in design, I discovered my passion for web development</p>
+                                </div>
+                                <div className="row">
+                                    <Tabs>
+                                        <div label="Development">
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faReact} />
+                                                <h4>React / Redux</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faSass} />
+                                                <h4>CSS / SASS</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faLaravel} />
+                                                <h4>Laravel</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <img className="img-fluid" src="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/GraphQL_Logo.svg.png" alt="GraphQL Logo" />
+                                                <h4>GraphQL</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faPhp} />
+                                                <h4>PHP</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faWordpress} />
+                                                <h4>Wordpress</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                        </div>
+                                        <div label="DevOps">
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faJenkins} />
+                                                <h4>Continuous Integration</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faAws} />
+                                                <h4>AWS</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faGit} />
+                                                <h4>Version Control</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faLinux} />
+                                                <h4>Linux Shell &amp; WHM</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                        </div>
+                                        <div label="UX Design">
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faAdobe} />
+                                                <h4>Adobe Creative Suite</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                            </div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faSketch} />
+                                                <h4>Sketch</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p></div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faInvision} />
+                                                <h4>InVision</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p></div>
+                                            <div className="col-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faFigma} />
+                                                <h4>Figma</h4>
+                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p></div>
+                                        </div>
+                                    </Tabs>
+                                </div><div className="row mt-5">
                                     <Tabs>
                                         <div label="KAX Media">
-                                            <div className="col-9">
+                                            <div className="col-8">
                                                 <div className="aboutMeRow">
                                                     <h2>KAX Media</h2>
                                                     <p>My main responsibility at KAX was to develop and maintain the PPC website on behalf of the Growth Marketing team. This involved the constant expansion of the site, which was made possible by Laravel, an MVC PHP framework. This website consumed multiple internal APIs which significantly simplifies the large volume of data it has access to from our database.</p>
                                                     <h3>Responsibilities</h3>
                                                     <ul>
-                                                        <li><FontAwesomeIcon icon={faArrowRight} />Incididunt consectetur cillum mollit ea commodo qui Lorem eu aliquip.</li>
-                                                        <li><FontAwesomeIcon icon={faArrowRight} />Irure cupidatat ipsum sit non cillum do ea Lorem ex.</li>
-                                                        <li><FontAwesomeIcon icon={faArrowRight} />Aliqua mollit sit est consequat duis consectetur reprehenderit culpa sunt sint aliquip irure.</li>
-                                                        <li><FontAwesomeIcon icon={faArrowRight} />Elit commodo laborum incididunt veniam ut cupidatat.</li>
+                                                        <li><FontAwesomeIcon icon={faArrowRight} />Developing and maintaining the company's main PPC site using Laravel and Twig.</li>
+                                                        <li><FontAwesomeIcon icon={faArrowRight} />Configuring and executing A/B and multivariate tests.</li>
+                                                        <li><FontAwesomeIcon icon={faArrowRight} />Creating new features, sections and landing pages for various websites that we managed.</li>
+                                                        <li><FontAwesomeIcon icon={faArrowRight} />Working with various internal APIs to deliver dynamic, real time content to websites.</li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div className="col-3">
+                                            <div className="col-4">
                                                 <div className="jobDetails">
                                                     <h3>Job Details</h3>
                                                     <h4><FontAwesomeIcon icon={faUser} />Title</h4>
@@ -93,21 +173,20 @@ class Experience extends React.Component {
                                             </div>
                                         </div>
                                         <div label="Originate">
-                                            <div className="col-9">
+                                            <div className="col-8">
                                                 <div className="aboutMeRow">
                                                     <h2>Originate</h2>
-                                                    <p>There were many dimensions to my role here at Originate. First and foremost, I was responsible for developing responsive, corporate websites for a wide variety of clients. I was involved in every aspect of the web development process which includes building the site from a mock-up or wireframe, search engine optimisation, analytics tracking and cross browser / device testing.
-                                        Most importantly, working at a busy agency such as Originate encouraged me to improve my time management, communication and problem-solving skills. I believe that these three characteristics are vital for working effectively.</p>
+                                                    <p>Originate is a small Branding agency in south Dublin with clients from a wide variety of industries. My role here was to develop websites to coexist with the branding identity being created by the art directors and designers in Originate.</p>
                                                     <h3>Responsibilities</h3>
                                                     <ul>
-                                                        <li><FontAwesomeIcon icon={faArrowRight} />Incididunt consectetur cillum mollit ea commodo qui Lorem eu aliquip.</li>
-                                                        <li><FontAwesomeIcon icon={faArrowRight} />Irure cupidatat ipsum sit non cillum do ea Lorem ex.</li>
-                                                        <li><FontAwesomeIcon icon={faArrowRight} />Aliqua mollit sit est consequat duis consectetur reprehenderit culpa sunt sint aliquip irure.</li>
-                                                        <li><FontAwesomeIcon icon={faArrowRight} />Elit commodo laborum incididunt veniam ut cupidatat.</li>
+                                                        <li><FontAwesomeIcon icon={faArrowRight} />Developing responsive websites and landing pages for our clients primarily using Wordpress and / or PHP.</li>
+                                                        <li><FontAwesomeIcon icon={faArrowRight} />Using effective Search Engine Optimisation techniques to give ourc clients websites a strong organic online presence.</li>
+                                                        <li><FontAwesomeIcon icon={faArrowRight} />Using Google Analytics for continuous insights into the performance of our sites.</li>
+                                                        <li><FontAwesomeIcon icon={faArrowRight} />Managing a virtual server (WHM) with over 60 websites.</li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div className="col-3">
+                                            <div className="col-4">
                                                 <div className="jobDetails">
                                                     <h3>Job Details</h3>
                                                     <h4><FontAwesomeIcon icon={faUser} />Title</h4>
@@ -120,7 +199,7 @@ class Experience extends React.Component {
                                             </div>
                                         </div>
                                         <div label="Harvey Norman">
-                                            <div className="col-9">
+                                            <div className="col-8">
                                                 <div className="aboutMeRow">
                                                     <h2>Harvey Norman</h2>
                                                     <p>As a Front End / UI / UX Designer, my primary role was to create seamless user journeys for Harvey Norman Ireland website. This includes conducing user research, prototyping, designing wireframes and developing the content for the site. My role was all-inclusive since I was involved in every step of the design process.</p>
@@ -133,7 +212,7 @@ class Experience extends React.Component {
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div className="col-3">
+                                            <div className="col-4">
                                                 <div className="jobDetails">
                                                     <h3>Job Details</h3>
                                                     <h4><FontAwesomeIcon icon={faUser} />Title</h4>
@@ -147,6 +226,7 @@ class Experience extends React.Component {
                                         </div>
                                     </Tabs>
                                 </div>
+
                             </div>
                         </section>
                     </div>

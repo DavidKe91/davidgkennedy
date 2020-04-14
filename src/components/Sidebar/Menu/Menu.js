@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Menu.css';
-import { Link } from 'react-router-dom';
-import MenuItem from '../MenuItem/MenuItem';
+import MenuItems from './MenuItems';
 import Icons from '../../Icons/Icons';
 
 class Menu extends Component {
@@ -19,24 +18,14 @@ class Menu extends Component {
 
     render() {
 
-        const menu = [{ label: 'Home', anchor: '/' }, { label: 'About', anchor: '/about' }, { label: 'Experience', anchor: '/experience' }, { label: 'Portfolio', anchor: '/portfolio' }];
-        const menuItems = menu.map((val, index) => {
-            return (
-                <Link to={val.anchor} key={index}>
-                    <MenuItem
-                        delay={`${index * 1}s`}>
-                        {val.label}
-                    </MenuItem>
-                </Link>
-            )
-        });
+
 
         return (
             <div className="sidebar">
                 {
                     this.state.open ?
                         <ul className="menu-items">
-                            {menuItems}
+                            <MenuItems />
                         </ul> : null
                 }
                 <Icons />

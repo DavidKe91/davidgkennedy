@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import classes from './Footer.module.css';
+import './Footer.css';
 import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MenuItems from '../Sidebar/Menu/MenuItems';
 
 class Footer extends Component {
     footerYear = () => {
@@ -11,24 +12,23 @@ class Footer extends Component {
     }
     render() {
         return (
-            <footer className={classes.footer}>
+            <footer className="footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col-3">
-                            <h3 className={classes.footerName}>David <span>Kennedy</span></h3>
-                            <small className={classes.copyright}>Copyright &copy; {this.footerYear()} by David Kennedy</small>
+                        <div className="col-12 col-md-3">
+                            <h3 className="footerName">David <span>Kennedy</span></h3>
                         </div>
-                        <div className="col-3">
-                            <ul className={classes.footerMenu}>
-                                {this.props.footerMenu}
+                        <div className="col-12 col-md-3">
+                            <ul className="footerMenu">
+                                <MenuItems />
                             </ul>
                         </div>
-                        <div className="col-6">
-                            <div className={classes.contact}>
+                        <div className="col-12 col-md-3">
+                            <div className="contact">
                                 <p>Phone: <a href="tel:+353857402604">085 740 2604</a></p>
                                 <p>Email: <a href="tel:+353857402604">davidgkennedy@hotmail.com</a></p>
                             </div>
-                            <div className={classes.icons}>
+                            <div className="icons">
                                 <a href="https://www.instagram.com/dave_tripper/" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>
@@ -39,6 +39,9 @@ class Footer extends Component {
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
                             </div>
+                        </div>
+                        <div className="col-12 col-md-3">
+                            <small className="copyright">Copyright &copy; {this.footerYear()} by David Kennedy</small>
                         </div>
                     </div>
                 </div>

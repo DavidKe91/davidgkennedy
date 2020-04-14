@@ -13,7 +13,7 @@ const Work = () => {
         getFirebase()
             .database()
             .ref("/posts")
-            .orderByChild("dateFormatted")
+            .limitToLast(4)
             .once("value")
             .then(snapshot => {
                 let posts = [];
@@ -28,8 +28,6 @@ const Work = () => {
             });
     }
 
-    console.log(blogPosts);
-
     if (loading) {
         return <h1>Loading...</h1>;
     }
@@ -38,7 +36,7 @@ const Work = () => {
         <section className={classes.workSection}>
             <div className="container">
                 <div className={classes.headerWrapper}>
-                    <h3 className="text-center">Recent Work<sup>2</sup></h3>
+                    <h3 className="text-center">Recent Work<sup>3</sup></h3>
                 </div>
                 <div className="row portfolioRow">
                     {blogPosts.map(blogPost => (

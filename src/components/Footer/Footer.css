@@ -2,7 +2,7 @@
     background-color: #1b1e29;
     color: #fff;
     position: fixed;
-    padding: 50px 0px;
+    padding: 70px 0px 60px 0px;
     bottom: 0px;
     width: 100%;
 }
@@ -28,7 +28,7 @@
 }
 
 .footerMenu li {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .contact p, .contact p a {
@@ -36,7 +36,7 @@
     padding: 0px 15px 0px 0px;
     display: block;
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
     transition: color 0.5s;
 }
 
@@ -50,6 +50,11 @@
 
 .contact a:hover {
     color: #16c2b9;
+}
+
+.icons {
+    float: left;
+    margin-top: 15px;
 }
 
 .icons a {
@@ -70,4 +75,8 @@
     padding: 10px 0px 20px 0px;
     display: block;
     font-size: 10px;
+}
+
+.footerMenu div a {
+    color: #ffffff;
 }

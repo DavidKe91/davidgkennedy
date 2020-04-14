@@ -92,7 +92,9 @@
     position: relative;
     z-index: 2;
     background-color: white;
-    margin-bottom: 160px;
+    padding-bottom: 140px;
+    margin-bottom: 140px;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 0% 100%);
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -107,7 +109,7 @@
 }
 
 section {
-    padding: 50px 0px 0px 0px;
+    padding: 75px 0px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -124,7 +126,7 @@ button {
     position: relative;
     padding: 8px 33px 8px 23px;
     margin: 0px auto 30px auto;
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 50px;
 }
 
@@ -230,18 +232,18 @@ h5 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 13px;
     color: #525d6e;
     line-height: 21px
 }
 
 small {
-    font-size: 12px;
+    font-size: 13px;
     color: black;
 }
 
 a {
-    font-size: 12px;
+    font-size: 13px;
     color: black;
     position: relative;
 }
@@ -267,7 +269,7 @@ a.externalLink::after {
 }
 
 .row.portfolioRow .col-sm-12:nth-child(even) {
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
 @keyframes App-logo-spin {

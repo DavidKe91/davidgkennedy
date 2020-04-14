@@ -32,9 +32,9 @@ class Tabs extends Component {
             }
         } = this;
 
-        let tabClasses = classNames("col-3", "tabList");
+        let tabClasses = classNames("col-12", "tabList");
 
-        let tabContent = classNames("col-9", "tabContent")
+        let tabContent = classNames("col-12", "tabContent")
 
         return (
             <>

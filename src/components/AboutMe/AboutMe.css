@@ -18,6 +18,10 @@
     margin: 35px auto 0px auto;
 }
 
+.aboutMeCols p {
+    text-align: center;
+}
+
 .AboutMeCopy {
     text-align: left;
 }
@@ -25,10 +29,13 @@
 .categories {
     text-align: center;
     padding: 0px 5px;
+}
+
+.aboutMeCols .row .col-4 {
     border-right: 1px solid #eaeaea;
 }
 
-.aboutMeCols .row .col-4:nth-child(3) .categories {
+.aboutMeCols .row .col-4:nth-child(3) {
     border-right: none;
 }
 
@@ -44,5 +51,5 @@
 }
 
 .categories p {
-    font-size: 12px;;
+    font-size: 13px;;
 }
