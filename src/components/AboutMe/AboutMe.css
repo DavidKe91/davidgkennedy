@@ -53,3 +53,14 @@
 .categories p {
     font-size: 13px;;
 }
+
+
+@media only screen and (max-width: 767px) {
+.headerWrapper {
+    display: inline-block;
+    float: none;
+    position: relative;
+    margin: 0px auto;
+    width: 320px;
+}
+}

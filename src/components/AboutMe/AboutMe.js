@@ -9,7 +9,7 @@ class AboutMe extends Component {
         return (
             <>
                 <section className="about">
-                    <div className="row">
+                    <div className="row no-gutters">
                         <div className="headerWrapper"><h3 className="text-center">About Me<sup>1</sup></h3></div>
                         <div className="container">
                             <div className="aboutMeCols">
