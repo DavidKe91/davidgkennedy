@@ -46,7 +46,7 @@ class Experience extends React.Component {
         return (
             <>
                 <div className={toggleClasses}>
-                    <div className="topOuter">
+                    <div className="">
                         <MenuButtonClose
                             open={this.state.menuOpen}
                             onClick={() => this.handleMenuClick()}>
@@ -74,49 +74,49 @@ class Experience extends React.Component {
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faReact} />
                                                 <h4>React / Redux</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>Over the past year and a half I have built a personal portfolio of React projects using Redux as a tool to manage the state.</p>
                                             </div>
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faSass} />
                                                 <h4>CSS / SASS</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>I have used CSS since I began working as a web developer. Over the past 6 years I have kept up to date with changes to CSS such as mastering Flexbox, converting to SASS for better efficiency and I am now experimenting with PostCSS</p>
                                             </div>
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faLaravel} />
                                                 <h4>Laravel</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>During my time at KAX Media I worked almost exclusively with Laravel applications. The MVC pattern simplified the complexity of development significantly.</p>
                                             </div>
                                             <div className="col-4 tab-content-item mb-4">
                                                 <img className="img-fluid" src="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/GraphQL_Logo.svg.png" alt="GraphQL Logo" />
                                                 <h4>GraphQL</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>I recently completed several projects using GraphQL to easily query databases. GraphQL made it very easy to query exactly what I want and customise the related data returned.</p>
                                             </div>
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faPhp} />
                                                 <h4>PHP</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>Throughout my career I have consistently used PHP. My most recent experience with PHP was using it through the Laravel framework to consume Rest APIs.</p>
                                             </div>
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faWordpress} />
                                                 <h4>Wordpress</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>I have almost four years of experience working with Wordpress. I have used this system mostly for the convenient CMS interface for clients to take ownership of the project to make regular updates to the site.</p>
                                             </div>
                                         </div>
-                                        <div label="DevOps">
+                                        <div label="Development Tools">
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faJenkins} />
                                                 <h4>Continuous Integration</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>In my previous role at KAX Media, I used Jenkins extensively to deploy my code to different environments depending on where the project was in it's lifecycle. Using Jenkins dramatically improved my efficiency.</p>
                                             </div>
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faAws} />
                                                 <h4>AWS</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>I have experience working with S3 for hosting static content and EC2 for computing resources. This very website is hosted on S3. The flexibility and scalability of the plans make it far more efficient than a regular server.</p>
                                             </div>
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faGit} />
                                                 <h4>Version Control</h4>
-                                                <p>Ad cupidatat aute qui laborum tempor id eu minim. Nisi ullamco sunt ipsum voluptate amet amet voluptate deserunt do irure ex do.</p>
+                                                <p>I use Git to easily share and manage my code. Git is essential for working in teams but also for deploying your code. Using Git with Jenkins to divide your branchs into their relevant environments is a great way of simplifying the development process. Visit my GitHub profile <a href="https://github.com/DavidKe91" target="_blank">here</a>.</p>
                                             </div>
                                             <div className="col-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faLinux} />

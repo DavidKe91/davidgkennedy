@@ -135,6 +135,10 @@ li.tab-list-item.tab-list-active h5 {
     margin-bottom: 15px;
 }
 
+.tab-content-item p a {
+    color: #16c2b9;
+}
+
 .tab-content-item img {
     padding: 0px 0px 15px 0px;
     height: 60px;

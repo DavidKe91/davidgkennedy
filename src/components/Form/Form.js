@@ -58,13 +58,13 @@ class Form extends Component {
                     <h3 className="text-center">Get in Touch<sup>5</sup></h3>
                 </div>
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <div className="contactBlock">
                             <p><span>Phone: </span> 085 7402604</p>
                             <p><span>Email: </span> info@davidgkennedy.com</p>
                         </div>
                     </div>
-                    <div className="col-8">
+                    <div className="col-12 col-md-8">
                         <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
                             <div className="form-group">
                                 <label className="message" htmlFor="message-input">Your Message</label>

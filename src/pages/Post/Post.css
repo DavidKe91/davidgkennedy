@@ -1,0 +1,101 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1.blogHeading:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    z-index: 9;
+    height: 6px;
+    border-top: 1px solid #16c2b9;
+}
+
+.blogContent {
+    margin-top: 70px;
+}
+
+.topOuter {
+    background: linear-gradient(0deg, #15c2b9, #64e4de);
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 44% 94%, 0 100%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 69%, 78% 100%, 0 100%, 0 0);
+}
+
+.appHeader {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    clip-path: polygon(50% 0%, 100% 0, 78% 100%, 0 100%, 0 0);
+}
+
+.titleContainer {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    padding: 0px 20px;
+}
+
+.projectInfo {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+}
+
+.projectDescription, .projectDescription h3, .projectDescription p {
+    text-align: left;
+}
+
+.columnsLeft {
+    -webkit-columns: 2 200px;
+    -moz-columns: 2 200px;
+    columns: 2 200px;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    text-align: left;
+}
+
+.info {
+    width: 100%;
+}
+
+.info button {
+    display: block;
+    float: none;
+    margin: 10px 0px;
+}
+
+.info button a, .info button svg {
+    color: #ffffff;
+}
+
+.info svg {
+    color: #16c2b9;
+}
+
+.iconRow, .aboutMeCols {
+    width: 100%;
+    display: flex;
+    margin: 50px auto 0px auto;
+}
+
+.projectHeading {
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 15px;
+}

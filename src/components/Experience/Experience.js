@@ -40,7 +40,7 @@ class Experience extends Component {
                                 <h4>Skills</h4>
                                 <h5>Frontend Development</h5>
                                 <p><small>HTML, CSS, Javascript, React, Redux, VueJS, JQuery</small></p>
-                                <h5>DevOps</h5>
+                                <h5>Development Tools</h5>
                                 <p><small>Git, Jenkins, AWS, WHM, Linux Shell, Docker</small></p>
                                 <h5>UX Design</h5>
                                 <p><small>Adobe Creative Suite, Sketch, Invision, Figma</small></p>

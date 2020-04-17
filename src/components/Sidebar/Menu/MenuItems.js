@@ -7,12 +7,15 @@ class MenuItems extends Component {
         const menu = [{ label: 'Home', anchor: '/' }, { label: 'About', anchor: '/about' }, { label: 'Experience', anchor: '/experience' }, { label: 'Portfolio', anchor: '/portfolio' }];
         const menuItems = menu.map((val, index) => {
             return (
-                <Link to={val.anchor} key={index}>
-                    <MenuItem
-                        delay={`${index * 1}s`}>
+
+                <MenuItem
+                    delay={`${index * 1}s`}
+                    key={index}>
+                    <Link to={val.anchor} >
                         {val.label}
-                    </MenuItem>
-                </Link>
+                    </Link>
+                </MenuItem>
+
             )
         });
         return (<div>

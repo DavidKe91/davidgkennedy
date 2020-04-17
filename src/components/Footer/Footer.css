@@ -1,8 +1,7 @@
 .footer {
     background-color: #1b1e29;
     color: #fff;
-    position: fixed;
-    padding: 70px 0px 60px 0px;
+    padding: 30px 0px 30px 0px;
     bottom: 0px;
     width: 100%;
 }
@@ -29,6 +28,10 @@
 
 .footerMenu li {
     font-size: 13px;
+}
+
+.footerMenu div li a:hover {
+        color: #16c2b9;
 }
 
 .contact p, .contact p a {
@@ -72,7 +75,7 @@
 
 .copyright {
     color: #ffffff;
-    padding: 10px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
     display: block;
     font-size: 10px;
 }

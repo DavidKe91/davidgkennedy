@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { getFirebase } from "../../firebase";
 import { Redirect } from "react-router-dom";
-import classes from './Post.module.css';
-
+import './Post.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarAlt, faLink, faUser, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Footer from '../../components/Footer/Footer';
+import classes from '../../components/Introduction/Introduction.module.css';
 const Post = ({ match }) => {
 
+
+
     const slug = match.params.slug;
-    const postSlugs = ["my-first-blog-post", "my-second-blog-post"];
     const [loading, setLoading] = useState(true);
     const [currentPost, setCurrentPost] = useState();
 
@@ -39,61 +43,69 @@ const Post = ({ match }) => {
 
     return (
         <>
-            <div className="blog-container">
-                <div className={classes.topOuter}>
-                    <div className="row no-gutters">
-                        <div className="col-6">
-                            <header className={classes.appHeader} style={backgroundStyle}>
-                                <div className="container">
-                                </div>
-                            </header>
+            <div className="main">
+                <div className="blog-container">
+                    <div className="topOuter">
+                        <div className="row no-gutters">
+                            <div className="col-12">
+                                <header className="appHeader" style={backgroundStyle}>
+                                    <div className={classes.headerWrapper}>
+                                        <h1 className="blogHeading">
+                                            {currentPost.title}</h1>
+                                    </div>
+                                </header>
+                            </div>
                         </div>
-                        <div className="col-6">
-                            <div className={classes.titleContainer}>
-                                <h1 className="white">{currentPost.title}</h1>
-                                <div className={classes.projectInfo}>
-                                    <div className='row no-gutters'>
-                                        <div className="col">
-                                            <i className="far fa-calendar-alt white"></i>
-                                            <h4 className={`${classes.projectHeading} white`}>Project Completed</h4>
-                                            <p><small className="white">{currentPost.datePretty}</small></p>
+                    </div>
+                    <div className="blogContent">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-8">
+                                    <img src={currentPost.introImage} className="img-fluid" />
+
+                                </div>
+                                <div className="col-4">
+                                    <div className="columnsLeft">
+                                        <div className="projectInfo">
+                                            <div className='row no-gutters'>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faCalendarAlt} />
+                                                    <h4 className="projectHeading">Project Completed</h4>
+                                                    <p><small className="">{currentPost.datePretty}</small></p>
+                                                </div>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faUser} />
+                                                    <h4 className="projectHeading">Client</h4><p><small className="">{currentPost.client}</small></p></div>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faLink} />
+                                                    <h4 className="projectHeading">Website Link</h4>
+                                                    <button><a className="externalLink" href={currentPost.url} target="_blank" rel="noopener noreferrer">Click Here</a><FontAwesomeIcon icon={faArrowRight} /></button></div>
+                                            </div>
                                         </div>
-                                        <div className="col">
-                                            <i className="fas fa-link white"></i>
-                                            <h4 className={`${classes.projectHeading} white`}>Website Link</h4>
-                                            <a className="externalLink white" href={currentPost.url} target="_blank" rel="noopener noreferrer">Click Here</a></div>
-                                        <div className="col">
-                                            <i className="fas fa-user white"></i>
-                                            <h4 className={`${classes.projectHeading} white`}>Client</h4><p><small className="white">{currentPost.client}</small></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row mt-5">
+                            <div className="container">
+                                <div className="projectDescription">
+                                    <h3 className="mt-5">Description</h3>
+                                    <p className="m-5">{currentPost.content}</p>
+                                </div>
+                                <div className="row">
+                                    <div className="col-6">
+                                        <img src={currentPost.desktopMockup} className="img-fluid" alt="Desktop Mockup" />
+                                    </div>
+                                    <div className="col-6">
+                                        <img src={currentPost.mobileMockup} className="img-fluid" alt="Mobile Mockup" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className={classes.blogContent}>
-                    <div className="container">
-                        <div className={classes.aboutMeCols}>
-                            <div className="col-4">
-                                <h3 className="text-right">The Project</h3>
-                            </div>
-                            <div className="col-8">
-                                <div className={classes.columnsLeft}>
-                                    <p>{currentPost.content}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div className="row no-gutter">
-                <div className="col-6">
-                    <img src={currentPost.desktopMockup} className="img-fluid" alt="Desktop Mockup" />
-                </div>
-                <div className="col-6">
-                    <img src={currentPost.mobileMockup} className="img-fluid" alt="Mobile Mockup" />
-                </div>
-            </div>
+            <Footer />
         </>
     );
 };

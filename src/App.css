@@ -90,10 +90,9 @@
     width: 100%;
     transition: all 0.3s ease;
     position: relative;
-    z-index: 2;
     background-color: white;
-    padding-bottom: 140px;
-    margin-bottom: 140px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
     clip-path: polygon(0 0, 100% 0, 100% 99%, 0% 100%);
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -102,9 +101,13 @@
     transition: all 0.3s ease;
 }
 
+.main.toggled {
+    clip-path: none;
+}
+
 @media screen and (min-width: 768px) {
     .main.toggled {
-      padding-left: 300px;
+        margin-left: 300px;
     }
 }
 
@@ -256,17 +259,6 @@ a.externalLink {
     margin-bottom: 16px;
 }
 
-a.externalLink::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    bottom: -2px;
-    z-index: 9;
-    height: 1px;
-    border-top: 1px solid white;
-}
 
 .row.portfolioRow .col-sm-12:nth-child(even) {
     margin-top: 75px;
@@ -279,4 +271,10 @@ a.externalLink::after {
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 767px) {
+    .row.portfolioRow .col-sm-12:nth-child(even) {
+        margin-top: 0px;
+    }
 }
