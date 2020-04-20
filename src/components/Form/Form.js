@@ -28,11 +28,10 @@ class Form extends Component {
         let axiosConfig = {
             headers: {
                 'Content-Type': 'application/json;charset=UTF-8',
-                "Access-Control-Allow-Origin": "*",
             }
         };
 
-        axios.post('https://portfolio-api-git-master.davidke91.now.sh/api/v1', data, axiosConfig)
+        axios.post('https://cors-anywhere.herokuapp.com/https://portfolio-api-git-master.davidke91.now.sh/api/v1', data, axiosConfig)
             .then(res => {
                 console.log(res);
                 this.setState({ sent: true }, this.resetForm())
