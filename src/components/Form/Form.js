@@ -32,7 +32,7 @@ class Form extends Component {
             }
         };
 
-        axios.post('https://portfolio-api-three.now.sh/', data, axiosConfig)
+        axios.post('https://portfolio-api-git-master.davidke91.now.sh/', data, axiosConfig)
             .then(res => {
                 console.log(res);
                 this.setState({ sent: true }, this.resetForm())
