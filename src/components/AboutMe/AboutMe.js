@@ -9,8 +9,8 @@ class AboutMe extends Component {
         return (
             <>
                 <section className="about">
+                    <div className="headerWrapper"><h3 className="text-center">About Me<sup>1</sup></h3></div>
                     <div className="row no-gutters">
-                        <div className="headerWrapper"><h3 className="text-center">About Me<sup>1</sup></h3></div>
                         <div className="container">
                             <div className="aboutMeCols">
                                 <p className="mb-5">Hi! My name is David Kennedy and I am a Frontend Developer based in Berlin. My main area of expertise is building responsive React applications. Having initially worked as a graphic designer, I later transitioned to Frontend web development and I am now looking for me next opportunity.</p>

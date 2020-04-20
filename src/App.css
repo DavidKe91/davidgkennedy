@@ -91,18 +91,13 @@
     transition: all 0.3s ease;
     position: relative;
     background-color: white;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     margin-bottom: 0px;
-    clip-path: polygon(0 0, 100% 0, 100% 99%, 0% 100%);
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-}
-
-.main.toggled {
-    clip-path: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -247,7 +242,7 @@ small {
 
 a {
     font-size: 13px;
-    color: black;
+    color: #16c2b9;
     position: relative;
 }
 

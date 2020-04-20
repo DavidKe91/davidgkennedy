@@ -51,8 +51,7 @@ class Home extends React.Component {
                         posts.push(snapshotVal[slug]);
                     }
 
-                    const newestFirst = posts.reverse();
-                    this.setState({ blogPosts: newestFirst });
+                    this.setState({ blogPosts: posts });
                     this.setState({ loading: false });
                 });
         }

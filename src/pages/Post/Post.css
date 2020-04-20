@@ -26,20 +26,55 @@ h1.blogHeading:before {
     margin-top: 70px;
 }
 
-.topOuter {
+/* .topOuter {
     background: linear-gradient(0deg, #15c2b9, #64e4de);
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 44% 94%, 0 100%, 0 0);
     clip-path: polygon(50% 0%, 100% 0, 100% 69%, 78% 100%, 0 100%, 0 0);
-}
+} */
 
 .appHeader {
-    min-height: 85vh;
+    min-height: 95vh;
     display: flex;
+    background-size: cover;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    clip-path: polygon(50% 0%, 100% 0, 78% 100%, 0 100%, 0 0);
+}
+
+.blogHeaderWrapper {
+position: absolute;
+right: 50px;
+}
+
+.blogHeaderWrapper h1 {
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #051441;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.blogHeaderWrapper h1 span {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #051441;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.blogHeaderWrapper h2:after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    z-index: 9;
+    height: 6px;
+    border-top: 1px solid #16c2b9;
 }
 
 .titleContainer {
@@ -98,4 +133,33 @@ h1.blogHeading:before {
     margin-top: 20px;
     display: inline-block;
     margin-left: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    .projectInfo {
+        margin-top: 20px;
+    }
+    .info {
+        text-align: center;
+    }
+    .info svg {
+        display: block;
+        text-align: center;
+        float: none;
+        margin: 10px auto 0px auto;
+    }
+    .info button {
+        margin: 10px auto;
+    }
+    .info button svg {
+        margin: 0px 3px;
+    }
+    .info .projectHeading {
+        margin-top: 20px;
+        display: inline-block;
+        margin-left: 0px;
+    }
+    .projectDescription, .projectDescription h3, .projectDescription p {
+        text-align: center;
+    }
 }

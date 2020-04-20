@@ -1,5 +1,6 @@
 section.experience {
     background: #f9f8fd;
+    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
     padding-bottom: 75px;
     padding-top: 75px;
 }
@@ -62,6 +63,8 @@ section.experience {
 
 .headerWrapper {
     display: inline-block;
+    text-align: center;
+    margin: 0px auto;
 }
 
 .headerWrapper p {

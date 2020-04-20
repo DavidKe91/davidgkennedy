@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import classes from './Portfolio.module.css';
 import classNames from 'classnames';
 import Menu from '../../components/Sidebar/Menu/Menu';
-import MenuItem from '../../components/Sidebar/MenuItem/MenuItem';
 import MenuButtonClose from '../../components/Sidebar/MenuButtons/MenuButtonClose';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from '../../components/Footer/Footer';
+import parse from 'html-react-parser';
 
 class Portfolio extends React.Component {
     state = {
@@ -50,9 +50,7 @@ class Portfolio extends React.Component {
                     for (let slug in snapshotVal) {
                         posts.push(snapshotVal[slug]);
                     }
-
-                    const newestFirst = posts.reverse();
-                    this.setState({ blogPosts: newestFirst });
+                    this.setState({ blogPosts: posts });
                     this.setState({ loading: false });
                 });
         }
@@ -98,7 +96,7 @@ class Portfolio extends React.Component {
                                                     Tech Stack: <small className={classes.categoryLink}>{blogPost.tech}</small>
                                                 </p>
                                                 <h2 className={classes.caption}>
-                                                    {blogPost.title}
+                                                    {parse(blogPost.title)}
                                                 </h2>
                                                 <p className={classes.previewText}>{blogPost.content.substring(0, 190)}...<Link to={`/${blogPost.slug}`}>Read More</Link></p>
                                                 <Link to={`/${blogPost.slug}`}>

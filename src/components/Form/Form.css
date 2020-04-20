@@ -19,6 +19,12 @@
     padding-right: 3px;
 }
 
+section.form {
+    clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+    background: #f9f8fd;
+    padding-bottom: 0px;
+}
+
 @media only screen and (max-width: 767px) {
     .row.portfolioRow .col-sm-12:nth-child(even) {
         margin-top: 0px;

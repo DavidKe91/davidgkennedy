@@ -30,6 +30,12 @@
     padding: 0px 20px;
 }
 
+.headshot {
+    margin-top: 0px;
+    max-width: 100%;
+    height: auto;
+}
+
 .projectInfo {
     margin: 40px 0px 0px 0px;
     position: relative;
@@ -60,6 +66,6 @@
 .aboutMeRow {
     width: 100%;
     max-width: 700px;
-    margin: 35px auto 35px auto;
+    margin: 0px auto 35px auto;
     text-align: left;
 }
