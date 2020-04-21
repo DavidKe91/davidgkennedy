@@ -153,3 +153,9 @@ li.tab-list-item.tab-list-active h5 {
     font-size: 13px;
     color: #4a4a4a;
 }
+
+@media only screen and (max-width: 767px) {
+    section.experience {
+        padding-top: 120px;
+    }
+}

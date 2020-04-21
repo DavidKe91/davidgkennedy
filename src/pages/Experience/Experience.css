@@ -176,10 +176,26 @@ p.intro {
 
 
 @media only screen and (max-width: 767px) {
+    .experienceHeader {
+        background-image: none;
+        background: url('https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/home-bg.jpg');
+        background-position: 95% -140px;
+        background-repeat: no-repeat;
+            }
     .tabList {
         display: flex;
+        flex-wrap: wrap;
         margin: 0px 0px 20px 0px;
         justify-content: space-evenly;
+    }
+
+    .experiencePage {
+        -webkit-clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 98%, 0% 100%);
+    }
+
+    .tabList li {
+        margin: 10px 0px;
     }
     .tab-list-item + .tab-list-item {
         margin-left: 0px;

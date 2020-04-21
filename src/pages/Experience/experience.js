@@ -7,7 +7,7 @@ import MenuButtonClose from '../../components/Sidebar/MenuButtons/MenuButtonClos
 import Footer from '../../components/Footer/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faUser, faBuilding, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
-import { faReact, faSass, faGit, faLaravel, faPhp, faWordpress, faJenkins, faAws, faLinux, faAdobe, faSketch, faInvision, faFigma } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faSass, faGit, faLaravel, faPhp, faWordpress, faNodeJs, faJenkins, faAws, faLinux, faAdobe, faSketch, faInvision, faFigma } from '@fortawesome/free-brands-svg-icons';
 import Tabs from '../../components/Tabs/Tabs';
 
 class Experience extends React.Component {
@@ -98,6 +98,11 @@ class Experience extends React.Component {
                                                 <FontAwesomeIcon icon={faWordpress} />
                                                 <h4>Wordpress</h4>
                                                 <p>I have almost four years of experience working with Wordpress. I have used this system mostly for the convenient CMS interface for clients to take ownership of the project to make regular updates to the site.</p>
+                                            </div>
+                                            <div className="col-6 col-md-4 tab-content-item mb-4">
+                                                <FontAwesomeIcon icon={faNodeJs} />
+                                                <h4>Node JS</h4>
+                                                <p>Over the past year I have experimented with Node.js to create server side applications. This website, for instance, uses Node, Express and Nodemailer to handle form submissions.</p>
                                             </div>
                                         </div>
                                         <div label="Development Tools">

@@ -41,7 +41,7 @@ class AboutMe extends Component {
                                 </div>
                             </div>
                             <div className="col-12">
-                                <Link to="/about"><button>Learn More About Me <FontAwesomeIcon icon={faArrowRight} /></button></Link>
+                                <Link to="/about"><button className="aboutBtn">Learn More About Me <FontAwesomeIcon icon={faArrowRight} /></button></Link>
                             </div>
                         </div>
                     </div>

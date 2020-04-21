@@ -66,3 +66,10 @@
     margin: 15px 0px;
     border: 3px solid white;
 }
+
+@media only screen and (max-width: 767px) {
+    .workSection {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+}

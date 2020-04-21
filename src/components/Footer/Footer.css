@@ -97,6 +97,11 @@
         margin: 15px auto;
         width: 100%;
     }
+
+.icons a {
+    padding: 0px 8px;
+}
+
     .copyright {
         text-align: center;
     }
