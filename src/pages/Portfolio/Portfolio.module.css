@@ -23,6 +23,12 @@
     text-align: center;
 }
 
+.portfolioPage {
+    background: #f9f8fd;
+    padding-bottom: 75px;
+    padding-top: 75px;
+}
+
 .titleContainer {
     top: 50%;
     position: relative;

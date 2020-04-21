@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from 'classnames';
 import Menu from '../../components/Sidebar/Menu/Menu';
-import MenuItem from '../../components/Sidebar/MenuItem/MenuItem';
 import { Link } from "react-router-dom";
 import classes from './About.module.css';
 import MenuButtonClose from '../../components/Sidebar/MenuButtons/MenuButtonClose';
@@ -53,7 +52,7 @@ class About extends React.Component {
                                 </div>
                             </div>
                         </header>
-                        <section className="about">
+                        <section className={classes.aboutPage}>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12 col-md-6">

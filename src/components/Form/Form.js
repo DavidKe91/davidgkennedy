@@ -46,7 +46,7 @@ class Form extends Component {
         this.setState({
             name: '',
             email: '',
-            buttonText: '',
+            message: '',
             buttonText: 'Message Sent'
         })
     }
@@ -69,12 +69,12 @@ class Form extends Component {
                             <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
                                 <div className="form-group">
                                     <label className="message" htmlFor="message-input">Your Message</label>
-                                    <textarea className="form-control" onChange={(e) => this.setState({ message: e.target.value })} name="message" className="form-control" type="text" placeholder="Please write your message here" value={this.state.message} required />
+                                    <textarea className="form-control" onChange={(e) => this.setState({ message: e.target.value })} name="message" type="text" placeholder="Please write your message here" value={this.state.message} required />
                                 </div>
 
                                 <div className="form-group">
                                     <label className="message-name" htmlFor="message-name">Your Name</label>
-                                    <input className="form-control" onChange={(e) => this.setState({ name: e.target.value })} name="name" className="form-control" type="text" placeholder="Your Name" value={this.state.name} />
+                                    <input className="form-control" onChange={(e) => this.setState({ name: e.target.value })} name="name" type="text" placeholder="Your Name" value={this.state.name} />
                                 </div>
 
                                 <label className="message-email" htmlFor="message-email">Your Email</label>

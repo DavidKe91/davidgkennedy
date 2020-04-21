@@ -33,7 +33,7 @@ h1.blogHeading:before {
 } */
 
 .appHeader {
-    min-height: 95vh;
+    min-height: 85vh;
     display: flex;
     background-size: cover;
     flex-direction: column;
@@ -48,7 +48,7 @@ right: 50px;
 }
 
 .blogHeaderWrapper h1 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 300;
     letter-spacing: 0px;
     color: #051441;
@@ -56,8 +56,12 @@ right: 50px;
     margin-bottom: 0px;
 }
 
+.blogHeaderWrapper h1:after {
+    display: none;
+}
+
 .blogHeaderWrapper h1 span {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     letter-spacing: 0px;
     color: #051441;

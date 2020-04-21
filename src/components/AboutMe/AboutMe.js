@@ -27,8 +27,8 @@ class AboutMe extends Component {
                                     <div className="col-12 col-md-4">
                                         <div className="categories">
                                             <FontAwesomeIcon icon={faTerminal} />
-                                            <h4>DevOps</h4>
-                                            <p>Throughout my career I have worked with many DevOps processes and tools that greatly simplify and shorten the development lifecycle. Tools such as Jenkins, Git and Docker help with the continuous delivery of high quality code.</p>
+                                            <h4>Dev Tools</h4>
+                                            <p>Throughout my career I have worked with many development processes and tools that greatly simplify and shorten the development lifecycle. Tools such as Jenkins, Git and Docker help with the continuous delivery of high quality code.</p>
                                         </div>
                                     </div>
                                     <div className="col-12 col-md-4">

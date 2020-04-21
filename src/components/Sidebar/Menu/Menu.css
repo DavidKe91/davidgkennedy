@@ -3,7 +3,7 @@
     width: 300px;
     position: fixed;
     left: 0px;
-    z-index: 1;
+    z-index: 9;
     background-color: #16c2b9;
     left: -300px;
     -webkit-transition: all 0.3s ease;

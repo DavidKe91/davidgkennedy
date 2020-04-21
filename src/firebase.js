@@ -2,13 +2,13 @@ import firebase from "firebase/app";
 import database from "firebase/database";
 
 const config = {
-    apiKey: "AIzaSyCe63XVSt_libg4Yc7wVtXcrmi0lrUpN0g",
-    authDomain: "portfolio-blog-5b686.firebaseapp.com",
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
     databaseURL: "https://portfolio-blog-5b686.firebaseio.com",
-    projectId: "portfolio-blog-5b686",
-    storageBucket: "portfolio-blog-5b686.appspot.com",
-    messagingSenderId: "356178033189",
-    appId: "1:356178033189:web:159622c7412de7a2795dcc",
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID,
 };
 
 let firebaseCache;

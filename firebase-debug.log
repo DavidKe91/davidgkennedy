@@ -1,0 +1,32 @@
+[debug] [2020-04-20T19:51:54.099Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T19:51:54.100Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-04-20T19:51:54.101Z] CLI Version:   8.1.1
+[debug] [2020-04-20T19:51:54.101Z] Platform:      win32
+[debug] [2020-04-20T19:51:54.101Z] Node Version:  v12.16.1
+[debug] [2020-04-20T19:51:54.102Z] Time:          Mon Apr 20 2020 20:51:54 GMT+0100 (Irish Standard Time)
+[debug] [2020-04-20T19:51:54.102Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T19:51:54.102Z] 
+[debug] [2020-04-20T19:51:54.108Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-20T19:52:08.141Z] Error: Unable to detect a Project Id in the current environment. 
+To learn more about authentication and Google APIs, visit: 
+https://cloud.google.com/docs/authentication/getting-started
+    at C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:89:31
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-04-20T20:02:54.510Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T20:02:54.512Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-04-20T20:02:54.512Z] CLI Version:   8.1.1
+[debug] [2020-04-20T20:02:54.512Z] Platform:      win32
+[debug] [2020-04-20T20:02:54.512Z] Node Version:  v12.16.1
+[debug] [2020-04-20T20:02:54.513Z] Time:          Mon Apr 20 2020 21:02:54 GMT+0100 (Irish Standard Time)
+[debug] [2020-04-20T20:02:54.513Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T20:02:54.513Z] 
+[debug] [2020-04-20T20:02:54.518Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-20T20:03:08.555Z] Error: Unable to detect a Project Id in the current environment. 
+To learn more about authentication and Google APIs, visit: 
+https://cloud.google.com/docs/authentication/getting-started
+    at C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:89:31
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.

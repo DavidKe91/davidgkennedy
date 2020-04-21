@@ -69,7 +69,7 @@ class Experience extends React.Component {
                                     <p className="intro">Upon finishing secondary school I attended Maynooth University where I studied Digital Media for four years. The course was a combination of media theory, computer science and creative media projects. I opted to take an optional Erasmus year abroad where I studied at the University of Amsterdam. During this time I also worked as a graphic design intern. Whilst working in design, I discovered my passion for web development</p>
                                 </div>
                                 <div className="row">
-                                    <div class="headerWrapper"><h3 class="text-center">Skills<sup>1</sup></h3></div>
+                                    <div className="headerWrapper my-4"><h3 className="text-center">Skills<sup>1</sup></h3></div>
                                 </div>
                                 <div className="row mt-5">
                                     <Tabs>
@@ -88,11 +88,6 @@ class Experience extends React.Component {
                                                 <FontAwesomeIcon icon={faLaravel} />
                                                 <h4>Laravel</h4>
                                                 <p>During my time at KAX Media I worked almost exclusively with Laravel applications. The MVC pattern simplified the complexity of development significantly.</p>
-                                            </div>
-                                            <div className="col-6 col-md-4  tab-content-item mb-4">
-                                                <img className="img-fluid" src="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/GraphQL_Logo.svg.png" alt="GraphQL Logo" />
-                                                <h4>GraphQL</h4>
-                                                <p>I recently completed several projects using GraphQL to easily query databases. GraphQL made it very easy to query exactly what I want and customise the related data returned.</p>
                                             </div>
                                             <div className="col-6 col-md-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faPhp} />
@@ -119,7 +114,7 @@ class Experience extends React.Component {
                                             <div className="col-6 col-md-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faGit} />
                                                 <h4>Version Control</h4>
-                                                <p>I use Git to easily share and manage my code. Git is essential for working in teams but also for deploying your code. Using Git with Jenkins to divide your branchs into their relevant environments is a great way of simplifying the development process. Visit my GitHub profile <a href="https://github.com/DavidKe91" target="_blank">here</a>.</p>
+                                                <p>I use Git to easily share and manage my code. Git is essential for working in teams but also for deploying your code. Using Git with Jenkins to divide your branchs into their relevant environments is a great way of simplifying the development process. Visit my GitHub profile <a href="https://github.com/DavidKe91" target="_blank" rel="noopener noreferrer">here</a>.</p>
                                             </div>
                                             <div className="col-6 col-md-4 tab-content-item mb-4">
                                                 <FontAwesomeIcon icon={faLinux} />
@@ -146,10 +141,26 @@ class Experience extends React.Component {
                                                 <h4>Figma</h4>
                                                 <p>Figma allows designers to rapidly design and prototype rapidly. Their scalable design infrastructure makes development much easier.</p></div>
                                         </div>
+                                        <div label="Data Management">
+                                            <div className="col-6 col-md-4 tab-content-item mb-4">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/MySQLIcon.png" alt="MySQL" />
+                                                <h4>SQL</h4>
+                                                <p>Throughout most of my career I have used relational databases and MySQL. I believe that its scalability, performance and ease of use make it one of the best databases on the market.</p>
+                                            </div>
+                                            <div className="col-6 col-md-4 tab-content-item mb-4">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/MongoDB-Icon.png" alt="MongoDB Icon" />
+                                                <h4>MongoDB</h4>
+                                                <p>I have recently been using MongoDB for GraphQL bases projects. I used mLab with the assistance of Mongoose on the Front End to create cloud based data stores.</p></div>
+                                            <div className="col-6 col-md-4  tab-content-item mb-4">
+                                                <img className="img-fluid" src="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/GraphQL_Logo.svg.png" alt="GraphQL Logo" />
+                                                <h4>GraphQL</h4>
+                                                <p>I recently completed several projects using GraphQL to easily query databases. GraphQL made it very easy to query exactly what I want and customise the related data returned.</p>
+                                            </div>
+                                        </div>
                                     </Tabs>
                                 </div>
                                 <div className="row mt-5">
-                                    <div class="headerWrapper"><h3 class="text-center">Work Experience<sup>2</sup></h3></div>
+                                    <div className="headerWrapper"><h3 className="text-center">Work Experience<sup>2</sup></h3></div>
                                 </div>
                                 <div className="row mt-5">
                                     <Tabs>

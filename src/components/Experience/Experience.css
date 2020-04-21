@@ -74,12 +74,13 @@ section.experience {
 
 .tabList {
     list-style: none;
-    text-align: left;
     font-size: 14px;
-    float: none;
+    float: left;
     border-bottom: 1px solid #e0e0e0;
     margin: 0px 15px 30px 15px;
     padding: 0px;
+    text-align: center;
+    list-style-position: inside;
 }
 
 .tab-list-item h5 {
@@ -90,8 +91,9 @@ section.experience {
 .tabList li {
     cursor: pointer;
     position: relative;
-    float: left;
     padding: 0px 0px 10px;
+    text-align: center;
+    display: inline-block;
 }
 
 .tab-list-item + .tab-list-item {

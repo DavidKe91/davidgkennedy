@@ -10,6 +10,14 @@
     }
 }
 
+.aboutPage {
+    background: #f9f8fd;
+    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 0, 100% 93%, 0% 100%);
+    padding-bottom: 75px;
+    padding-top: 75px;
+}
+
 .appHeader {
     height: 50vh;
     display: flex;

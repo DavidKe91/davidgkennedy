@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { getFirebase } from "../../firebase";
 import { Link } from "react-router-dom";
 import classes from './Portfolio.module.css';
@@ -83,31 +83,33 @@ class Portfolio extends React.Component {
                                 </div>
                             </div>
                         </header>
-                        <div className="container">
-                            <div className="row portfolioRow">
-                                {blogPosts.map(blogPost => (
-                                    <div className="col-sm-12 col-md-6" key={blogPost.slug}>
-                                        <div className={classes.workCard}>
-                                            <Link to={`/${blogPost.slug}`}>
-                                                <img className="img-fluid" src={blogPost.previewImage} alt={blogPost.coverImageAlt} />
-                                            </Link>
-                                            <div className={classes.cardContent}>
-                                                <p className={classes.category}>
-                                                    Tech Stack: <small className={classes.categoryLink}>{blogPost.tech}</small>
-                                                </p>
-                                                <h2 className={classes.caption}>
-                                                    {parse(blogPost.title)}
-                                                </h2>
-                                                <p className={classes.previewText}>{blogPost.content.substring(0, 190)}...<Link to={`/${blogPost.slug}`}>Read More</Link></p>
+                        <section className={classes.portfolioPage}>
+                            <div className="container">
+                                <div className="row portfolioRow">
+                                    {blogPosts.map(blogPost => (
+                                        <div className="col-sm-12 col-md-6" key={blogPost.slug}>
+                                            <div className={classes.workCard}>
                                                 <Link to={`/${blogPost.slug}`}>
-                                                    <button>Read More <FontAwesomeIcon icon={faArrowRight} /></button>
+                                                    <img className="img-fluid" src={blogPost.previewImage} alt={blogPost.coverImageAlt} />
                                                 </Link>
+                                                <div className={classes.cardContent}>
+                                                    <p className={classes.category}>
+                                                        Tech Stack: <small className={classes.categoryLink}>{blogPost.tech}</small>
+                                                    </p>
+                                                    <h2 className={classes.caption}>
+                                                        {parse(blogPost.title)}
+                                                    </h2>
+                                                    <p className={classes.previewText}>{blogPost.content.substring(0, 190)}...<Link to={`/${blogPost.slug}`}>Read More</Link></p>
+                                                    <Link to={`/${blogPost.slug}`}>
+                                                        <button>Read More <FontAwesomeIcon icon={faArrowRight} /></button>
+                                                    </Link>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
                 <Footer />

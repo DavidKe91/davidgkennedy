@@ -7,7 +7,6 @@ import { faCalendarAlt, faLink, faUser, faArrowRight } from "@fortawesome/free-s
 import Footer from '../../components/Footer/Footer';
 import Menu from '../../components/Sidebar/Menu/Menu';
 import MenuButtonClose from '../../components/Sidebar/MenuButtons/MenuButtonClose';
-import classes from '../../components/Introduction/Introduction.module.css';
 import parse from 'html-react-parser';
 import classNames from 'classnames';
 
@@ -105,7 +104,7 @@ const Post = ({ match }) => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-md-8">
-                                <img src={currentPost.introImage} className="img-fluid" />
+                                <img src={currentPost.introImage} className="img-fluid" alt="Intro" />
 
                             </div>
                             <div className="col-12 col-md-4">
@@ -132,8 +131,8 @@ const Post = ({ match }) => {
                         <div className="row mt-5">
                             <div className="container">
                                 <div className="projectDescription">
-                                    <h3 className="mt-5">Description</h3>
-                                    <p className="m-5">{currentPost.content}</p>
+                                    <h3 className="mt-2">Description</h3>
+                                    <p className="mt-2 my-5">{currentPost.content}</p>
                                 </div>
                                 <div className="row my-5">
                                     <div className="col-6">

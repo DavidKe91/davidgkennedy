@@ -3,7 +3,6 @@ import './Experience.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { faArrowRight, faBook, faBriefcase, faTools } from "@fortawesome/free-solid-svg-icons";
-import Tabs from '../Tabs/Tabs';
 
 class Experience extends Component {
     render() {
@@ -39,9 +38,9 @@ class Experience extends Component {
                                 <FontAwesomeIcon icon={faTools} />
                                 <h4>Skills</h4>
                                 <h5>Frontend Development</h5>
-                                <p><small>HTML, CSS, Javascript, React, Redux, VueJS, JQuery</small></p>
+                                <p><small>HTML, CSS, Javascript, React, Redux, VueJS, JQuery, NodeJS</small></p>
                                 <h5>Development Tools</h5>
-                                <p><small>Git, Jenkins, AWS, WHM, Linux Shell, Docker</small></p>
+                                <p><small>Git, Jenkins, AWS, WHM, Linux Shell, Docker, Zeit</small></p>
                                 <h5>UX Design</h5>
                                 <p><small>Adobe Creative Suite, Sketch, Invision, Figma</small></p>
                             </div>

@@ -29,7 +29,7 @@
     position: fixed;
     top: 10px;
     left: 15px;
-    z-index: 2;
+    z-index: 99;
 }
 
 .hamburger .line{
