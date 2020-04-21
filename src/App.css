@@ -159,7 +159,7 @@ h1::after {
     position: absolute;
     top: 50px;
     right: 0px;
-    z-index: 9;
+    z-index: 7;
     height: 6px;
     border-top: 1px solid white;
 }
@@ -192,7 +192,7 @@ h3:before {
     position: absolute;
     bottom: -20px;
     right: 0px;
-    z-index: 9;
+    z-index: 7;
     height: 6px;
     border-top: 1px solid #16c2b9;
 }

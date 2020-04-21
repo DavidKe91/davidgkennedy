@@ -83,3 +83,21 @@
 .footerMenu div a {
     color: #ffffff;
 }
+
+@media only screen and (max-width: 767px) {
+    .menuItem, .contact p, .contact p a {
+        text-align: center;
+        padding: 5px 0px;
+    }
+    .contact p a {
+        display: block;
+    }
+    .icons {
+        float: left;
+        margin: 15px auto;
+        width: 100%;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
