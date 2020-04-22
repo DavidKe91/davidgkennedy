@@ -18,17 +18,21 @@
     padding-top: 75px;
 }
 
-.appHeader {
+.about.appHeader {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    /* background: linear-gradient(90deg, #23a6d5, #16c2b9);
-    */
+    min-height: auto;
     background-image: url('https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/about-bg.jpg');
     background-size: cover;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+header.about .container .headerWrapper h1:after {
+    border-top: 1px solid #16c2b9;
+    width: 55px;
 }
 
 .titleContainer {
@@ -79,10 +83,13 @@
 }
 
 @media only screen and (max-width: 767px) {
-.appHeader {
+.about.appHeader {
     background-image: none;
     background: url('https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/home-bg.jpg');
     background-position: 95% -140px;
     background-repeat: no-repeat;
-        }
+}
+header.about .container .headerWrapper h1:after {
+    border-top: 1px solid white;
+}
     }

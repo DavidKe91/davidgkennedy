@@ -47,7 +47,7 @@ class Experience extends Component {
                         </div>
                         <div className="buttonRow">
                             <Link to="/experience"><button>Learn More <FontAwesomeIcon icon={faArrowRight} /></button></Link>
-                            <Link to="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/CV/David-Kennedy-CV.pdf"><button className="alt-btn">Download CV <FontAwesomeIcon icon={faArrowRight} /></button></Link>
+                            <a href="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/CV/David-Kennedy-CV.pdf" target="_blank" rel="noopener noreferrer"><button className="alt-btn">Download CV <FontAwesomeIcon icon={faArrowRight} /></button></a>
                         </div>
                     </div>
                 </div>

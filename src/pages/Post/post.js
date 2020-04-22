@@ -9,6 +9,7 @@ import Menu from '../../components/Sidebar/Menu/Menu';
 import MenuButtonClose from '../../components/Sidebar/MenuButtons/MenuButtonClose';
 import parse from 'html-react-parser';
 import classNames from 'classnames';
+import { Responsive } from "responsive-react";
 
 const Post = ({ match }) => {
 
@@ -72,6 +73,7 @@ const Post = ({ match }) => {
         backgroundImage: 'url(' + currentPost.coverImage + ')'
     }
 
+
     let toggleClasses = classNames({
         main: true,
         'toggled': menuOpen,
@@ -91,42 +93,79 @@ const Post = ({ match }) => {
                     </Menu>
                     <div className="row no-gutters">
                         <div className="col-12">
-                            <header className="appHeader" style={backgroundStyle}>
+                            <Responsive displayIn={["Tablet", "Laptop"]}>
+                                <header className="appHeader" style={backgroundStyle}>
+                                    <div className="blogHeaderWrapper">
+                                        <h1 className="blogHeading">
+                                            {parse(currentPost.title)}</h1>
+                                    </div>
+                                </header>
+                            </Responsive>
+                            <Responsive displayIn={["Mobile"]}>
+                                <img className="img-fluid" src={currentPost.mobileCoverImage} alt={currentPost.slug + " Mobile Cover Image"} />
                                 <div className="blogHeaderWrapper">
                                     <h1 className="blogHeading">
                                         {parse(currentPost.title)}</h1>
                                 </div>
-                            </header>
+                            </Responsive>
                         </div>
                     </div>
                 </div>
                 <div className="blogContent">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 col-md-8">
-                                <img src={currentPost.introImage} className="img-fluid" alt="Intro" />
+                            <Responsive displayIn={["Tablet", "Laptop"]}>
+                                <div className="col-12 col-md-8">
+                                    <img src={currentPost.introImage} className="img-fluid" alt="Intro" />
 
-                            </div>
-                            <div className="col-12 col-md-4">
-                                <div className="columnsLeft">
-                                    <div className="projectInfo">
-                                        <div className='row no-gutters'>
-                                            <div className="info">
-                                                <FontAwesomeIcon icon={faCalendarAlt} />
-                                                <h4 className="projectHeading">Project Completed</h4>
-                                                <p><small className="">{currentPost.datePretty}</small></p>
+                                </div>
+                                <div className="col-12 col-md-4">
+                                    <div className="columnsLeft">
+                                        <div className="projectInfo">
+                                            <div className='row no-gutters'>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faCalendarAlt} />
+                                                    <h4 className="projectHeading">Project Completed</h4>
+                                                    <p><small className="">{currentPost.datePretty}</small></p>
+                                                </div>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faUser} />
+                                                    <h4 className="projectHeading">Client</h4><p><small className="">{currentPost.client}</small></p></div>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faLink} />
+                                                    <h4 className="projectHeading">Website Link</h4>
+                                                    <button><a className="externalLink" href={currentPost.url} target="_blank" rel="noopener noreferrer">Click Here</a><FontAwesomeIcon icon={faArrowRight} /></button></div>
                                             </div>
-                                            <div className="info">
-                                                <FontAwesomeIcon icon={faUser} />
-                                                <h4 className="projectHeading">Client</h4><p><small className="">{currentPost.client}</small></p></div>
-                                            <div className="info">
-                                                <FontAwesomeIcon icon={faLink} />
-                                                <h4 className="projectHeading">Website Link</h4>
-                                                <button><a className="externalLink" href={currentPost.url} target="_blank" rel="noopener noreferrer">Click Here</a><FontAwesomeIcon icon={faArrowRight} /></button></div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Responsive>
+                            <Responsive displayIn={["Mobile"]}>
+                                <div className="col-12 col-md-8">
+                                    <img src={currentPost.introImage} className="img-fluid" alt="Intro" />
+
+                                </div>
+                                <div className="col-12 col-md-4">
+                                    <div className="columnsLeft">
+                                        <div className="projectInfo">
+                                            <div className='row no-gutters'>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faCalendarAlt} />
+                                                    <h4 className="projectHeading">Project Completed</h4>
+                                                    <p><small className="">{currentPost.datePretty}</small></p>
+                                                </div>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faUser} />
+                                                    <h4 className="projectHeading">Client</h4><p><small className="">{currentPost.client}</small></p></div>
+                                                <div className="info">
+                                                    <FontAwesomeIcon icon={faLink} />
+                                                    <h4 className="projectHeading">Website Link</h4>
+                                                    <button><a className="externalLink" href={currentPost.url} target="_blank" rel="noopener noreferrer">Click Here</a><FontAwesomeIcon icon={faArrowRight} /></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Responsive>
                         </div>
                         <div className="row mt-5">
                             <div className="container">

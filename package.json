@@ -18,10 +18,12 @@
         "html-react-parser": "^0.10.3",
         "react": "^16.13.0",
         "react-dom": "^16.13.0",
+        "react-ga": "^2.7.0",
         "react-router-dom": "^5.0.1",
         "react-scripts": "3.4.0",
         "react-transition-group-v2": "^4.3.0",
         "reactstrap": "^8.4.1",
+        "responsive-react": "^3.0.2",
         "styled-components": "^5.1.0"
     },
     "scripts": {
