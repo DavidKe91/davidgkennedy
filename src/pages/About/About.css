@@ -82,7 +82,7 @@ header.about .container .headerWrapper h1:after {
     text-align: left;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
 .about.appHeader {
     background-image: none;
     background: url('https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/home-bg.jpg');

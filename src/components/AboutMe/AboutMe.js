@@ -13,7 +13,7 @@ class AboutMe extends Component {
                     <div className="row no-gutters">
                         <div className="container">
                             <div className="aboutMeCols">
-                                <p className="mb-5">Hi! My name is David Kennedy and I am a Frontend Developer based in Meath. My main area of expertise is building responsive progressive web applications. Having initially worked as a graphic designer, I later transitioned to Frontend web development and I am now looking for me next opportunity.</p>
+                                <p className="mb-5">Hi! My name is David Kennedy and I am a Frontend Developer based in Meath. My main area of expertise is building responsive progressive web applications. Having initially worked as a graphic designer, I later transitioned to Frontend web development and I am now looking for my next opportunity.</p>
                             </div>
                             <div className="aboutMeCols">
                                 <div className="row mb-5">
