@@ -157,7 +157,7 @@ class Experience extends React.Component {
                                                 <h4>MongoDB</h4>
                                                 <p>I have recently been using MongoDB for GraphQL bases projects. I used mLab with the assistance of Mongoose on the Front End to create cloud based data stores.</p></div>
                                             <div className="col-6 col-md-4  tab-content-item mb-4">
-                                                <img className="img-fluid" src="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/GraphQL_Logo.svg.png" alt="GraphQL Logo" />
+                                                <img className="img-fluid" src="https://s3-eu-west-1.amazonaws.com/davidgkennedy.com/Portfolio+Images/GraphQLIcon.png" alt="GraphQL Logo" />
                                                 <h4>GraphQL</h4>
                                                 <p>I recently completed several projects using GraphQL to easily query databases. GraphQL made it very easy to query exactly what I want and customise the related data returned.</p>
                                             </div>
