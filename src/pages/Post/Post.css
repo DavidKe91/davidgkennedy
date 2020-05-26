@@ -33,6 +33,7 @@ h1.blogHeading:before {
 } */
 
 .appHeader {
+    background-position: center center;
     min-height: 85vh;
     display: flex;
     background-size: cover;

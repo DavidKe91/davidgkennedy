@@ -33,7 +33,6 @@ class Form extends Component {
 
         axios.post('http://34.240.72.75:9000/api/form', data)
             .then(res => {
-                console.log(res.data);
                 this.setState({ sent: true }, this.resetForm())
             })
             .catch(() => {

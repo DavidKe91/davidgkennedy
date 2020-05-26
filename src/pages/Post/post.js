@@ -42,7 +42,6 @@ const Post = ({ match }) => {
                 let prevPost = allPosts[currentIndex - 1];
                 let nxtPost = allPosts[currentIndex + 1];
                 setNextPost(nxtPost);
-                console.log(nextPost);
             });
 
         getFirebase()
@@ -58,7 +57,6 @@ const Post = ({ match }) => {
             });
     }
 
-    console.log(nextPost);
 
     if (loading) {
         return <h1>Loading...</h1>;
