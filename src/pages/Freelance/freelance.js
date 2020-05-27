@@ -1,5 +1,6 @@
 import React from "react";
 import { getFirebase } from "../../firebase";
+import './Freelance.css';
 import classNames from 'classnames';
 import Introduction from '../../components/Freelance/Introduction/Introduction';
 import Bespoke from '../../components/Freelance/Bespoke/Bespoke';
@@ -76,10 +77,17 @@ class Freelance extends React.Component {
                         open={this.state.menuOpen}>
                     </Menu>
                     <Introduction />
-                    <Bespoke />
-                    <Experience />
-                    <Work />
-                    <Form />
+                    <section className="freelance-section">
+                        <div className="bg_shape shape_one"></div>
+                        <div className="bg_shape shape_two"></div>
+                        <div className="bg_shape shape_three"></div>
+                        <div className="container">
+                            <Bespoke />
+                            <Experience />
+                            <Work />
+                            <Form />
+                        </div>
+                    </section>
                 </div>
                 <Footer />
             </>

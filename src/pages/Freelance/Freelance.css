@@ -1,0 +1,45 @@
+.freelance-section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.bg_shape {
+    position: absolute;
+    background-color: #fafbff;
+    width: 1100px;
+    height: 1775px;
+    display: block;
+    border-radius: 120px;
+    z-index: 0;
+}
+
+.shape_one {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: -669px;
+    top: -80px;
+}
+
+.shape_two {
+    left: -669px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-43deg);
+    top: 275px;
+    width: 870px;
+}
+
+.shape_three {
+    bottom: -29%;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: -100px;
+    width: 988px;
+    height: 1022px;
+}
