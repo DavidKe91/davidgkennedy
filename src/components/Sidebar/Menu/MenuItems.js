@@ -4,7 +4,7 @@ import MenuItem from '../MenuItem/MenuItem';
 
 class MenuItems extends Component {
     render() {
-        const menu = [{ label: 'Home', anchor: '/' }, { label: 'About', anchor: '/about' }, { label: 'Experience', anchor: '/experience' }, { label: 'Portfolio', anchor: '/portfolio' }];
+        const menu = [{ label: 'Home', anchor: '/' }, { label: 'About', anchor: '/about' }, { label: 'Experience', anchor: '/experience' }, { label: 'Portfolio', anchor: '/portfolio' }, { label: 'Freelance', anchor: '/freelance' }];
         const menuItems = menu.map((val, index) => {
             return (
 
