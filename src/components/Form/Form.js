@@ -94,7 +94,7 @@ class Form extends Component {
             <section className="form">
                 <div className="container">
                     <div className="headerWrapper">
-                        <h3 className="text-center">Get in Touch<sup>5</sup></h3>
+                        <h3 className="text-center">{this.props.text}</h3>
                     </div>
                     <div className="row">
                         {/* <div className="col-12 col-md-4">

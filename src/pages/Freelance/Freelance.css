@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -42,4 +42,11 @@
     right: -100px;
     width: 988px;
     height: 1022px;
+}
+
+section.form {
+    -webkit-clip-path: none;
+    clip-path: none;
+    background: transparent;
+    padding-bottom: 0px;
 }

@@ -1,0 +1,33 @@
+.freelanceFeature {
+    padding-bottom: 30px;
+    .row {
+        .col-6 {
+            img {
+                max-height: 500px;
+            }
+        } 
+    }
+}
+
+.features {
+    text-align: left;
+    padding: 0px 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h3:before {
+        right: auto;
+        left: 0px;
+    }
+    p {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+.buttonRow {
+    a {
+            margin: 0px 5px;
+    }
+}

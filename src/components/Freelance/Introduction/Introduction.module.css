@@ -29,7 +29,7 @@
 .headerWrapper {
     display: inline-block;
     float: left;
-    max-width: 350px;
+    max-width: 500px;
     text-align: left;
 }
 
@@ -44,10 +44,16 @@
 }
 
 .headerWrapper p {
-    font-size: 15px;
-    color: #ffffff;
-    line-height: 20px;
-    margin-top: 10px;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.headerWrapper ul {
+    color: white;
+    margin-top: 20px;
+    padding-left: 15px;
+    font-size: 16px;
 }
 
 .headerWrapper h1:after {

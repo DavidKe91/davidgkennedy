@@ -4,6 +4,7 @@ import './Freelance.css';
 import classNames from 'classnames';
 import Introduction from '../../components/Freelance/Introduction/Introduction';
 import Bespoke from '../../components/Freelance/Bespoke/Bespoke';
+import Ecommerce from '../../components/Freelance/Ecommerce/Ecommerce';
 import Experience from '../../components/Experience/Experience';
 import Work from '../../components/Work/Work';
 import Menu from '../../components/Sidebar/Menu/Menu';
@@ -83,9 +84,8 @@ class Freelance extends React.Component {
                         <div className="bg_shape shape_three"></div>
                         <div className="container">
                             <Bespoke />
-                            <Experience />
-                            <Work />
-                            <Form />
+                            <Ecommerce />
+                            <Form text="Book a free consultation" />
                         </div>
                     </section>
                 </div>

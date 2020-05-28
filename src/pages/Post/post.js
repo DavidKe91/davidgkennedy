@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { getFirebase } from "../../firebase";
 import { Redirect } from "react-router-dom";
-import './Post.css';
+import classes from './_Post.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faLink, faUser, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from '../../components/Footer/Footer';
@@ -92,24 +92,24 @@ const Post = ({ match }) => {
                     <div className="row no-gutters">
                         <div className="col-12">
                             <Responsive displayIn={["Tablet", "Laptop"]}>
-                                <header className="appHeader" style={backgroundStyle}>
-                                    <div className="blogHeaderWrapper">
-                                        <h1 className="blogHeading">
+                                <header className={`${classes.appHeader}`} style={backgroundStyle}>
+                                    <div className={`${classes.blogHeaderWrapper}`}>
+                                        <h1 className={`${classes.blogHeading}`}>
                                             {parse(currentPost.title)}</h1>
                                     </div>
                                 </header>
                             </Responsive>
                             <Responsive displayIn={["Mobile"]}>
                                 <img className="img-fluid" src={currentPost.mobileCoverImage} alt={currentPost.slug + " Mobile Cover Image"} />
-                                <div className="blogHeaderWrapper">
-                                    <h1 className="blogHeading">
+                                <div className={`${classes.blogHeaderWrapper}`}>
+                                    <h1 className={`${classes.blogHeading}`}>
                                         {parse(currentPost.title)}</h1>
                                 </div>
                             </Responsive>
                         </div>
                     </div>
                 </div>
-                <div className="blogContent">
+                <div className={`${classes.blogContent}`}>
                     <div className="container">
                         <div className="row">
                             <Responsive displayIn={["Tablet", "Laptop"]}>
@@ -118,21 +118,21 @@ const Post = ({ match }) => {
 
                                 </div>
                                 <div className="col-12 col-md-4">
-                                    <div className="columnsLeft">
-                                        <div className="projectInfo">
+                                    <div className={`${classes.columnsLeft}`}>
+                                        <div className={`${classes.projectInfo}`}>
                                             <div className='row no-gutters'>
-                                                <div className="info">
+                                                <div className={`${classes.info}`}>
                                                     <FontAwesomeIcon icon={faCalendarAlt} />
-                                                    <h4 className="projectHeading">Project Completed</h4>
+                                                    <h4 className={`${classes.projectHeading}`}>Project Completed</h4>
                                                     <p><small className="">{currentPost.datePretty}</small></p>
                                                 </div>
-                                                <div className="info">
+                                                <div className={`${classes.info}`}>
                                                     <FontAwesomeIcon icon={faUser} />
-                                                    <h4 className="projectHeading">Client</h4><p><small className="">{currentPost.client}</small></p></div>
-                                                <div className="info">
+                                                    <h4 className={`${classes.projectHeading}`}>Client</h4><p><small className="">{currentPost.client}</small></p></div>
+                                                <div className={`${classes.info}`}>
                                                     <FontAwesomeIcon icon={faLink} />
-                                                    <h4 className="projectHeading">Website Link</h4>
-                                                    <button><a className="externalLink" href={currentPost.url} target="_blank" rel="noopener noreferrer">Click Here</a><FontAwesomeIcon icon={faArrowRight} /></button></div>
+                                                    <h4 className={`${classes.projectHeading}`}>Website Link</h4>
+                                                    <button><a className={`${classes.externalLink}`} href={currentPost.url} target="_blank" rel="noopener noreferrer">Click Here</a><FontAwesomeIcon icon={faArrowRight} /></button></div>
                                             </div>
                                         </div>
                                     </div>
@@ -144,20 +144,20 @@ const Post = ({ match }) => {
 
                                 </div>
                                 <div className="col-12 col-md-4">
-                                    <div className="columnsLeft">
-                                        <div className="projectInfo">
+                                    <div className={`${classes.columnsLeft}`}>
+                                        <div className={`${classes.projectInfo}`}>
                                             <div className='row no-gutters'>
                                                 <div className="info">
                                                     <FontAwesomeIcon icon={faCalendarAlt} />
-                                                    <h4 className="projectHeading">Project Completed</h4>
+                                                    <h4 className={`${classes.projectHeading}`}>Project Completed</h4>
                                                     <p><small className="">{currentPost.datePretty}</small></p>
                                                 </div>
                                                 <div className="info">
                                                     <FontAwesomeIcon icon={faUser} />
-                                                    <h4 className="projectHeading">Client</h4><p><small className="">{currentPost.client}</small></p></div>
+                                                    <h4 className={`${classes.projectHeading}`}>Client</h4><p><small className="">{currentPost.client}</small></p></div>
                                                 <div className="info">
                                                     <FontAwesomeIcon icon={faLink} />
-                                                    <h4 className="projectHeading">Website Link</h4>
+                                                    <h4 className={`${classes.projectHeading}`}>Website Link</h4>
                                                     <button><a className="externalLink" href={currentPost.url} target="_blank" rel="noopener noreferrer">Click Here</a><FontAwesomeIcon icon={faArrowRight} /></button></div>
                                             </div>
                                         </div>
@@ -167,7 +167,7 @@ const Post = ({ match }) => {
                         </div>
                         <div className="row mt-5">
                             <div className="container">
-                                <div className="projectDescription">
+                                <div className={`${classes.projectDescription}`}>
                                     <h3 className="mt-2">Description</h3>
                                     <p className="mt-2 my-5">{currentPost.content}</p>
                                 </div>

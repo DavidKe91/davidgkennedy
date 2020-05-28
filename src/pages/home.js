@@ -79,7 +79,7 @@ class Home extends React.Component {
                     <AboutMe />
                     <Experience />
                     <Work />
-                    <Form />
+                    <Form text={["Get in Touch ", <sup>5</sup>]} />
                 </div>
                 <Footer />
             </>

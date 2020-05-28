@@ -26,12 +26,6 @@ h1.blogHeading:before {
     margin-top: 70px;
 }
 
-/* .topOuter {
-    background: linear-gradient(0deg, #15c2b9, #64e4de);
-    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 44% 94%, 0 100%, 0 0);
-    clip-path: polygon(50% 0%, 100% 0, 100% 69%, 78% 100%, 0 100%, 0 0);
-} */
-
 .appHeader {
     background-position: center center;
     min-height: 85vh;
@@ -44,18 +38,18 @@ h1.blogHeading:before {
 }
 
 .blogHeaderWrapper {
-position: absolute;
-right: 50px;
+    position: absolute;
+    right: 50px;
+    h1{
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        color: #051441;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+    }
 }
 
-.blogHeaderWrapper h1 {
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: 0px;
-    color: #051441;
-    text-transform: uppercase;
-    margin-bottom: 0px;
-}
 
 .blogHeaderWrapper h1:after {
     display: none;
