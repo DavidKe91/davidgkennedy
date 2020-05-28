@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/davidgkennedy.com/static/css/main.f2ae8150.chunk.css",
+    "main.js": "/davidgkennedy.com/static/js/main.860cf784.chunk.js",
+    "main.js.map": "/davidgkennedy.com/static/js/main.860cf784.chunk.js.map",
+    "runtime-main.js": "/davidgkennedy.com/static/js/runtime-main.62874f7a.js",
+    "runtime-main.js.map": "/davidgkennedy.com/static/js/runtime-main.62874f7a.js.map",
+    "static/css/2.de424728.chunk.css": "/davidgkennedy.com/static/css/2.de424728.chunk.css",
+    "static/js/2.37820ea3.chunk.js": "/davidgkennedy.com/static/js/2.37820ea3.chunk.js",
+    "static/js/2.37820ea3.chunk.js.map": "/davidgkennedy.com/static/js/2.37820ea3.chunk.js.map",
+    "index.html": "/davidgkennedy.com/index.html",
+    "precache-manifest.22673168913e2c7acb7ac4722ab3e9fe.js": "/davidgkennedy.com/precache-manifest.22673168913e2c7acb7ac4722ab3e9fe.js",
+    "service-worker.js": "/davidgkennedy.com/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/davidgkennedy.com/static/css/2.de424728.chunk.css.map",
+    "static/css/main.f2ae8150.chunk.css.map": "/davidgkennedy.com/static/css/main.f2ae8150.chunk.css.map",
+    "static/js/2.37820ea3.chunk.js.LICENSE.txt": "/davidgkennedy.com/static/js/2.37820ea3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62874f7a.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.37820ea3.chunk.js",
+    "static/css/main.f2ae8150.chunk.css",
+    "static/js/main.860cf784.chunk.js"
+  ]
+}
