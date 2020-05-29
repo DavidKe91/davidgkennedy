@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Switch, Route, withRouter, BrowserRouter } from "react-router-dom";
+import { HashRouter, Switch, Route, withRouter } from "react-router-dom";
 import Home from "../../pages/home";
 import About from "../../pages/About/about";
 import Experience from "../../pages/Experience/experience";
@@ -13,7 +13,7 @@ function Container({ location }) {
     return (
         <Wrapper>
             <section className="route-section">
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <HashRouter basename='/'>
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/about" component={About} />
@@ -23,7 +23,7 @@ function Container({ location }) {
                         <Route path="/404" component={NoMatch} />
                         <Route path="/:slug" component={Post} />
                     </Switch>
-                </BrowserRouter>
+                </HashRouter>
             </section>
         </Wrapper>
     );
