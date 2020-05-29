@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Switch, Route, withRouter } from "react-router-dom";
+import { Switch, Route, withRouter, BrowserRouter } from "react-router-dom";
 import Home from "../../pages/home";
 import About from "../../pages/About/about";
 import Experience from "../../pages/Experience/experience";
@@ -13,15 +13,17 @@ function Container({ location }) {
     return (
         <Wrapper>
             <section className="route-section">
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/experience" component={Experience} />
-                    <Route exact path="/portfolio" component={Portfolio} />
-                    <Route exact path="/freelance" component={Freelance} />
-                    <Route path="/404" component={NoMatch} />
-                    <Route path="/:slug" component={Post} />
-                </Switch>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/experience" component={Experience} />
+                        <Route exact path="/portfolio" component={Portfolio} />
+                        <Route exact path="/freelance" component={Freelance} />
+                        <Route path="/404" component={NoMatch} />
+                        <Route path="/:slug" component={Post} />
+                    </Switch>
+                </BrowserRouter>
             </section>
         </Wrapper>
     );
