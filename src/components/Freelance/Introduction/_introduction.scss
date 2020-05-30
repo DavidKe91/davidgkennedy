@@ -20,6 +20,27 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+}
+
+.macbook {
+    float: right;
+    text-align: right;
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    z-index: 0;
+    max-width: 530px;
+}
+
+.iphone {
+    float: right;
+    text-align: right;
+    position: absolute;
+    bottom: -24px;
+    right: 440px;
+    z-index: 0;
+    max-height: 370px;
 }
   
 .appLink {
@@ -31,6 +52,14 @@
     float: left;
     max-width: 500px;
     text-align: left;
+}
+
+.headerWrapperBlock {
+    display: block;
+    float: none;
+    max-width: 500px;
+    text-align: left;
+    margin: 0px auto;
 }
 
 .headerWrapper h1 {

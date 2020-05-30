@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import Introduction from '../../components/Freelance/Introduction/Introduction';
 import Bespoke from '../../components/Freelance/Bespoke/Bespoke';
 import Ecommerce from '../../components/Freelance/Ecommerce/Ecommerce';
+import Services from '../../components/Freelance/Services/Services';
 import Experience from '../../components/Experience/Experience';
 import Work from '../../components/Work/Work';
 import Menu from '../../components/Sidebar/Menu/Menu';
@@ -85,6 +86,10 @@ class Freelance extends React.Component {
                         <div className="container">
                             <Bespoke />
                             <Ecommerce />
+                            <Bespoke />
+                        </div>
+                        <Services />
+                        <div className="container">
                             <Form text="Book a free consultation" />
                         </div>
                     </section>

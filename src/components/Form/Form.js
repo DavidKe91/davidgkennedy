@@ -93,7 +93,7 @@ class Form extends Component {
         return (
             <section className="form">
                 <div className="container">
-                    <div className="headerWrapper">
+                    <div className="headerWrapperBlock">
                         <h3 className="text-center">{this.props.text}</h3>
                     </div>
                     <div className="row">
